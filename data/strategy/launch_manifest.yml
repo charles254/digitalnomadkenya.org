@@ -1,0 +1,20 @@
+# VizaBot KE Launch Manifest
+
+## Environment Config
+- **Hosting**: Hostinger VPS (Germany/EU Data Center)
+- **Compliance**: GDPR (Passport/Bank data ephemeral processing)
+- **Dependencies**: 
+    - Python 3.10+
+    - Vision AI API (e.g., GPT-4o or Claude 3.5 Sonnet)
+    - M-Pesa Daraja API
+
+## Deployment Steps
+1. **Clone**: `git clone viza-bot-ke`
+2. **Environment**: `pip install -r requirements.txt`
+3. **Secrets**: Configure `.env` with M-Pesa and AI API Keys.
+4. **SSL**: `certbot --nginx` (Mandatory for trust).
+5. **Skill Update**: Push `immigration_pro_ke` to OpenClaw instance.
+
+## Monetization Hook
+- **Trigger**: Payment required after Step 3 (Vision Audit) to generate the final Dossier.
+- **Conversion Goal**: 15% of free audits to $50 Application Packs.

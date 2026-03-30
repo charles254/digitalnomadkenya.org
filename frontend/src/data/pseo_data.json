@@ -1,0 +1,225 @@
+{
+  "nationalities": [
+    { "id": "american", "name": "American", "plural": "Americans", "country": "USA", "legal_gotcha": "Americans must provide a certified IRS tax transcript for the last 2 years. FBI background checks are preferred over local police clearance for Class N." },
+    { "id": "british", "name": "British", "plural": "Britons", "country": "UK", "legal_gotcha": "UK citizens require an ACRO Police Certificate. Simple DBS checks are often rejected by the e-FNS portal." },
+    { "id": "german", "name": "German", "plural": "Germans", "country": "Germany", "legal_gotcha": "German applicants must provide a certified translation of their employment contract if it is not in English." },
+    { "id": "french", "name": "French", "plural": "French", "country": "France", "legal_gotcha": "Ensure your 'Casier Judiciaire' is the Bulletin No. 3 and has been issued within the last 6 months." },
+    { "id": "canadian", "name": "Canadian", "plural": "Canadians", "country": "Canada", "legal_gotcha": "RCMP criminal record checks must be fingerprint-based to meet Kenya's security audit standards." },
+    { "id": "australian", "name": "Australian", "plural": "Australians", "country": "Australia", "legal_gotcha": "National Police Checks from the AFP are mandatory; state-level checks may cause delays." },
+    { "id": "dutch", "name": "Dutch", "plural": "Dutch", "country": "Netherlands", "legal_gotcha": "A VOG (Verklaring Omtrent het Gedrag) is required and must specifically mention international relocation." },
+    { "id": "swedish", "name": "Swedish", "plural": "Swedes", "country": "Sweden", "legal_gotcha": "Extracts from the Swedish Police Register must be provided in English or with a certified translation." },
+    { "id": "spanish", "name": "Spanish", "plural": "Spanish", "country": "Spain", "legal_gotcha": "Certificado de Antecedentes Penales is required. Kenya requires a Hague Apostille for Spanish legal documents." },
+    { "id": "indian", "name": "Indian", "plural": "Indians", "country": "India", "legal_gotcha": "PCC from the Regional Passport Office (RPO) is mandatory. Local station certificates are generally not accepted." },
+    { "id": "southafrican", "name": "South African", "plural": "South Africans", "country": "South Africa", "legal_gotcha": "Unabridged birth certificates and SAPS police clearance are high-priority requirements." },
+    { "id": "italian", "name": "Italian", "plural": "Italians", "country": "Italy", "legal_gotcha": "Certificato Penale and Certificato dei Carichi Pendenti must be translated by an accredited agency." },
+    { "id": "swiss", "name": "Swiss", "plural": "Swiss", "country": "Switzerland", "legal_gotcha": "Swiss Federal Criminal Record extracts must be issued with an international multi-language format." }
+  ],
+  "locations": [
+    { 
+      "id": "diani", 
+      "name": "Diani Beach", 
+      "region": "Coast",
+      "internet": "50Mbps Fiber", 
+      "vibe": "Tropical Coastal Paradise",
+      "rent": "$600 - $1,200",
+      "highlights": "Kite surfing, white sands, and fresh seafood.",
+      "description_long": "Diani Beach is a premier coastal location in Kenya. It features white sands and lush forests. Digital nomads benefit from Safaricom 5G and Home Fiber infrastructure. The Ukunda Airstrip provides 45-minute flight access to Nairobi. Residents enjoy a tight-knit community with frequent social meetups.",
+      "legality_tips": "Be aware that coastal property leases often require a KRA PIN for any term longer than 6 months. Foreigners are advised to use escrow services for rental deposits in Diani to ensure refund compliance.",
+      "logistics": [
+        "Safaricom 5G is excellent along Beach Road.",
+        "M-Pesa activation available at Ukunda Center.",
+        "KRA PIN required for long-term leases over 6 months.",
+        "Carrefour Diani handles all western grocery needs."
+      ],
+      "coworking": ["Diani Digital Nomad Hub", "Surfside Offices", "Kite-Work Village"],
+      "neighborhoods": ["Galu Beach (Quiet)", "Beach Road (Active)", "Ukunda (Local Experience)"]
+    },
+    { 
+      "id": "kilimani", 
+      "name": "Kilimani", 
+      "region": "Nairobi",
+      "internet": "100Mbps Liquid Fiber", 
+      "vibe": "Urban Expat Hub",
+      "rent": "$800 - $1,500",
+      "highlights": "High-end malls, 5G coverage, and intense nightlife.",
+      "description_long": "Kilimani is the primary urban hub for Nairobi's expat population. The area offers international schools and multiple coworking spaces. High-speed Liquid Fiber connectivity is standard in most apartments. Professionals in tech and finance prefer Kilimani for its walkability and proximity to global-standard cafes.",
+      "legality_tips": "In Nairobi, always ensure your lease agreement explicitly mentions 'furnished' or 'unfurnished' status to avoid KRA VAT disputes. Foreigners should also verify the landlord's 'Log Book' for the property to ensure they are the legal owners.",
+      "logistics": [
+        "Walkable to Yaya Center and Adlife Plaza.",
+        "High concentration of global bank branches (NCBA, Absa).",
+        "Uber and Bolt are the primary transport modes.",
+        "Fiber-to-the-home is standard in most apartments."
+      ],
+      "coworking": ["The Garage (Nairobi)", "Nairobi Game Development Center", "Ikigai Nairobi"],
+      "neighborhoods": ["Argwings Kodhek (Central)", "Dennis Pritt Road (Quiet)", "Kileleshwa (Residential)"]
+    },
+    { 
+      "id": "lamu", 
+      "name": "Lamu Island", 
+      "region": "Coast",
+      "internet": "Starlink / 5G", 
+      "vibe": "Ancient Swahili Tradition",
+      "rent": "$400 - $900",
+      "highlights": "UNESCO World Heritage, no cars, total peace.",
+      "description_long": "Lamu Island is a UNESCO World Heritage site. It offers a car-free environment for deep creative focus. Transport relies on traditional dhows and donkeys. Starlink provides 150Mbps+ internet speeds. The island combines ancient Swahili architecture with modern remote work reliability.",
+      "legality_tips": "Lamu is a UNESCO site, and building or renovation laws are extremely strict. If you are an investor looking at real estate here, ensure you have a certified heritage architect review any plans before submitting to the County Government.",
+      "logistics": [
+        "Starlink is the only reliable choice for HD video calls.",
+        "Cash is king, although M-Pesa is widely accepted.",
+        "Boat taxis are the only way to move between islands.",
+        "Power cuts can happen; ensure your laptop has good battery."
+      ],
+      "coworking": ["Lamu Creative Lab", "Peponi Garden Work", "Shela Sunset Office"],
+      "neighborhoods": ["Lamu Old Town (Culture)", "Shela Village (Premium)", "Manda Island (Secluded)"]
+    },
+    { 
+      "id": "naivasha", 
+      "name": "Naivasha", 
+      "region": "Rift Valley",
+      "internet": "Reliable 4G/Fixed Wireless", 
+      "vibe": "Lakeside Retreat",
+      "rent": "$500 - $1,000",
+      "highlights": "Hiking, boat rides, and proximity to Nairobi.",
+      "description_long": "Naivasha is a lakeside retreat located 90 minutes from Nairobi. The area supports 'Nature-Working' through boat rides and cycling. Mild climates and volcanic landscapes define the region. Luxury resorts on South Lake Road provide stable high-speed Wi-Fi per the Kenya Immigration Act 2024 standards.",
+      "legality_tips": "Rift Valley land often falls under unique leasehold structures. Ensure your rental agreement specifies that the property has a valid 'CofO' (Certificate of Occupancy) to avoid land-transfer disputes which are common in agricultural zones.",
+      "logistics": [
+        "1.5 hour drive from Nairobi via the highway.",
+        "Ideal for weekend warriors or low-stress freelancers.",
+        "Stable power grid compared to coastal areas.",
+        "Freshwater lake access for leisure activities."
+      ],
+      "coworking": ["Naivasha Innovation Hub", "Lakeside Lounge", "Enashipai Tech Corner"],
+      "neighborhoods": ["South Lake (Premium)", "Naivasha Town (Commercial)", "Moi South Lake Rd (Resorts)"]
+    },
+    { 
+      "id": "watamu", 
+      "name": "Watamu", 
+      "region": "Coast",
+      "internet": "Fiber / Starlink", 
+      "vibe": "Boutique Tropical Sanctuary",
+      "rent": "$500 - $1,100",
+      "highlights": "Marine parks, Italian cuisine, and sea turtle conservation.",
+      "description_long": "Watamu is a boutique coastal sanctuary built around three spectacular bays. It offers an intimate community feel with a focus on wellness and marine conservation. Rapid modernization has brought fiber-to-the-villa and new coworking spaces, making it perfect for blending high-intensity work with world-class diving.",
+      "legality_tips": "Watamu has a high concentration of community-run conservation NGOs. If you plan to volunteer or work with these organizations while on a Class N permit, ensure your activities are strictly non-remunerative to remain compliant with Kenyan labor laws.",
+      "logistics": [
+        "Safaricom Home Fiber is now available in major resorts.",
+        "Fly from Nairobi to Malindi (20 mins away) for easy access.",
+        "M-Pesa widely preferred over credit cards.",
+        "Private solar backups are common in newer villas."
+      ],
+      "coworking": ["Watamu Creative Space", "PAPA Remo Office", "Turtle Bay Work Hub"],
+      "neighborhoods": ["Temple Point (Quiet)", "Watamu Village (Cultural)", "Turtle Bay Road (Active)"]
+    },
+    { 
+      "id": "nanyuki", 
+      "name": "Nanyuki", 
+      "region": "Mt. Kenya",
+      "internet": "100Mbps Safaricom Fiber", 
+      "vibe": "High-Altitude Luxury Safari",
+      "rent": "$700 - $1,400",
+      "highlights": "Mt. Kenya views, Ol Pejeta Conservancy, and cool mountain air.",
+      "description_long": "Nanyuki is a high-altitude luxury destination sitting right on the Equator. It offers a crisp mountain climate and a unique 'Safari-Office' experience with views of Mt. Kenya. The town features designer boutiques, world-class dining, and reliable 100Mbps fiber for remote production.",
+      "legality_tips": "Nanyuki is home to many large agricultural and conservancy ranches. If you are leasing property within a private ranch, ensure your lease includes a 'Ranch Access Agreement' which is a standard but vital legal protection for tenants in the Laikipia region.",
+      "logistics": [
+        "High concentration of expat-friendly cafes with 5G.",
+        "Excellent medical facilities (Nanyuki Cottage Hospital).",
+        "KRA PIN essential for long-term farm stay leases.",
+        "Frequent daily flights from Wilson Airport (40 mins)."
+      ],
+      "coworking": ["The Nanyuki Hub", "Cape Chestnut Garden", "Le Rustique Workations"],
+      "neighborhoods": ["Mukima (High-end)", "Nanyuki Town (Convenience)", "Daiga (Wilderness)"]
+    },
+    { 
+      "id": "kisumu", 
+      "name": "Kisumu", 
+      "region": "Lakeside",
+      "internet": "Fiber Optics (Liquid/Zuku)", 
+      "vibe": "Lakeside Commerce & Culture",
+      "rent": "$400 - $900",
+      "highlights": "Impala Sanctuary, sunset boat rides, and fresh tilapia.",
+      "description_long": "Kisumu, Kenya’s 'Lake City', is a major logistics hub with robust infrastructure and lower living costs. It features reliable fiber networks and an international airport. Digital nomads can enjoy sunset boat rides on Lake Victoria after work and a high quality of life on a modest budget.",
+      "legality_tips": "Kisumu is a rapidly growing business hub. If you are a Class G investor, the Kisumu County Investment and Social Development (KCISD) office provides a specialized 'One-Stop' desk for foreign businesses looking to set up regional operations.",
+      "logistics": [
+        "NCBA and Standard Chartered branches are easily accessible.",
+        "Kisumu International Airport is 15 mins from the CBD.",
+        "Uber and Tuk-Tuks are the most common transport.",
+        "Stable climate with year-round tropical heat."
+      ],
+      "coworking": ["LakeHub Kisumu", "Viga Innovation", "The West End Offices"],
+      "neighborhoods": ["Milimani (Expat Area)", "Riat Hills (Views)", "CBD (Business)"]
+    },
+    { 
+      "id": "eldoret", 
+      "name": "Eldoret", 
+      "region": "North Rift",
+      "internet": "4G+ / Fiber", 
+      "vibe": "City of Champions",
+      "rent": "$300 - $700",
+      "highlights": "Agricultural rich, athletics culture, and affordable living.",
+      "description_long": "Eldoret is a high-altitude city known as the 'City of Champions.' It offers the lowest cost of living for a major Kenyan city alongside stable 4G+ and expanding fiber. It is ideal for nomads seeking an authentic experience away from expat bubbles with an emphasis on health and focus.",
+      "legality_tips": "In Eldoret, many residential properties are located on converted agricultural land. Always ensure your rental check has verified that the land is registered under 'Residential Use' to ensure you can use your lease agreement for official KRA residency audits.",
+      "logistics": [
+        "Direct highway access to the Uganda border.",
+        "Very low cost of living compared to Nairobi.",
+        "Strong academic and tech community due to MOI University.",
+        "Fast growing Eldoret International Airport."
+      ],
+      "coworking": ["Eldoret Tech Hub", "The Champions Lounge", "Naiberi River Base"],
+      "neighborhoods": ["Elgon View (Premium)", "Kapsoya (Residential)", "Town Center (Busy)"]
+    }
+  ],
+  "topics": [
+    {
+      "id": "cost-of-living",
+      "keyword": "Cost of Living",
+      "title": "Digital Nomad Cost of Living in Kenya (2026)",
+      "desc": "A detailed breakdown of rent, food, transport, and leisure costs in $ USD.",
+      "entities": ["Budgeting", "KES vs USD", "Expat Housing", "Groceries"],
+      "faqs": [
+        { "q": "How much is a monthly gym membership?", "a": "Expect to pay $40 - $70 for premium gyms in Nairobi/Diani." },
+        { "q": "Are groceries expensive?", "a": "Imported goods (Cheese, Wine) are pricey. Local produce is extremely cheap." },
+        { "q": "What is the average electricity bill?", "a": "For a 1-bedroom, expect $30 - $60 depending on AC usage." }
+      ],
+      "proTips": "Always pay for rent in KES to avoid exchange rate markups from landlords."
+    },
+    {
+      "id": "internet-speed",
+      "keyword": "Internet & Uptime",
+      "title": "Reliable Internet for Nomads in Kenya: Fiber & Starlink Guide",
+      "desc": "Maximum uptime locations, co-working coverage, and mobile data speeds.",
+      "entities": ["Liquid Intelligent Technologies", "Starlink Kenya", "Safaricom 5G", "Supa" ],
+      "faqs": [
+        { "q": "Does Starlink work in Lamu?", "a": "Yes, it is currently the best option for remote workers on the island." },
+        { "q": "How fast is Safaricom 5G?", "a": "In Nairobi and Diani, you can see speeds up to 300Mbps." },
+        { "q": "Is data capped in Kenya?", "a": "Most Home Fiber is unlimited. Mobile data is usually sold in daily/monthly bundles." }
+      ],
+      "proTips": "Always have a Safaricom 4G/5G backup router even if you have Fiber optics."
+    },
+    {
+      "id": "permit-requirements",
+      "keyword": "Visa Requirements",
+      "title": "Kenya Digital Nomad Visa (Class N): 2026 Requirements Guide",
+      "desc": "Step-by-step documentation audit for remote workers requiring $24,000 USD annually.",
+      "entities": ["Class N Permit", "Dossier Audit", "Tax Residency", "Minimum Income"],
+      "faqs": [
+        { "q": "Can I work for a Kenyan company on Class N?", "a": "No, Class N is strictly for work from foreign sources only." },
+        { "q": "Do I need a local bank account?", "a": "It's not required for the permit, but highly recommended for logistics." },
+        { "q": "How long does approval take?", "a": "Official timelines are 2-4 months, depending on dossier completeness." }
+      ],
+      "proTips": "Ensure your bank statements are certified by the bank to avoid rejection."
+    },
+    {
+      "id": "safety-for-expats",
+      "keyword": "Safety & Logistics",
+      "title": "Is Kenya Safe for Digital Nomads? Logistics & Practical Tips",
+      "desc": "Urban safety, healthcare standards, and night-time navigation for expats.",
+      "entities": ["Medical Insurance", "Emergency Contacts", "Neighborhood Safety", "Expat Communities"],
+      "faqs": [
+        { "q": "Can I walk at night in Nairobi?", "a": "Stick to well-lit areas in Kilimani/Westlands or use Uber/Bolt." },
+        { "q": "Is healthcare good?", "a": "Nairobi has world-class private hospitals (Aga Khan, Nairobi Hospital)." },
+        { "q": "Do I need special vaccinations?", "a": "Yellow Fever is required for entry. Malaria meds are recommended for the coast." }
+      ],
+      "proTips": "Join the local Nairobi Expat Slack to get real-time safety updates."
+    }
+  ]
+}

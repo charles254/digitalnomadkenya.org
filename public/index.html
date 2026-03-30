@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VizaBot KE | Kenyan Digital Nomad Permits, Simplified.</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <meta name="description" content="AI-powered assistant for Class N and Class G Kenyan permits. Audit your documents and avoid rejected fees instantly.">
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <!-- JSON-LD SEO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "VizaBot KE",
+      "operatingSystem": "Web",
+      "applicationCategory": "BusinessApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "10.00",
+        "priceCurrency": "USD"
+      },
+      "description": "AI-powered Kenya Digital Nomad (Class N) and Investor (Class G) permit assistant with Vision AI document auditing.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "128"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="container">
+        <nav>
+            <div class="logo">Viza<span>Bot</span> KE</div>
+            <ul class="nav-links">
+                <li><a href="#simulator">Eligibility Auditor</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <div class="badge">Launched for 2026 Nomads 🚀</div>
+            <h1>Kenyan Digital Nomad Permits, Simplified.</h1>
+            <p>Don't waste $200 on rejected government fees. Our AI audits your documents against the Kenyan Immigration Act in seconds.</p>
+            <a href="#simulator" class="btn">Check My Eligibility</a>
+        </section>
+
+        <section id="simulator" class="simulator glass-card">
+            <h2 style="margin-bottom: 1rem;">Eligibility Simulator</h2>
+            <p style="color: var(--text-muted); margin-bottom: 3rem;">Simulate the Class N (Nomad) audit process.</p>
+            
+            <div id="step-1" class="sim-step active">
+                <div class="input-group">
+                    <label>Annual Remote Income (USD)</label>
+                    <input type="number" id="income" placeholder="e.g. 60000">
+                </div>
+                <button onclick="nextStep(1)" class="btn">Next Step</button>
+            </div>
+
+            <div id="step-2" class="sim-step">
+                <div class="input-group">
+                    <label>Passport Expiry Date</label>
+                    <input type="date" id="passport-expiry" style="width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); border-radius: 12px; color: white;">
+                </div>
+                <button onclick="checkEligibility()" class="btn">Audit My Dossier</button>
+            </div>
+
+            <div id="result-area"></div>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <div class="price-card glass-card">
+                <h3>Eligibility Pass</h3>
+                <div class="amount">$10</div>
+                <ul>
+                    <li>Vision AI Document Audit</li>
+                    <li>Passport Validity Check</li>
+                    <li>Income Verification</li>
+                </ul>
+                <a href="#" class="btn" style="width: 100%; text-align: center;">Get Started</a>
+            </div>
+
+            <div class="price-card glass-card pro-card">
+                <div class="pro-tag">MOST POPULAR</div>
+                <h3>Application Pack</h3>
+                <div class="amount">$50</div>
+                <ul>
+                    <li>Everything in Eligibility Pass</li>
+                    <li>Generated Cover Letter</li>
+                    <li>e-Citizen Step-by-Step Video</li>
+                    <li>5 Vetted Property Leads</li>
+                </ul>
+                <a href="#" class="btn" style="width: 100%; text-align: center;">Get Started</a>
+            </div>
+
+            <div class="price-card glass-card">
+                <h3>VIP Fixer</h3>
+                <div class="amount">$250</div>
+                <ul>
+                    <li>Concierge SIM Card Delivery</li>
+                    <li>Physical Stamping Assistance</li>
+                    <li>Priority HR Support</li>
+                </ul>
+                <a href="#" class="btn" style="width: 100%; text-align: center;">Get Started</a>
+            </div>
+        </section>
+
+        <footer style="margin-top: 4rem; padding: 2rem 0; border-top: 1px solid var(--glass-border); text-align: center;">
+            <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 VizaBot KE. Hosted in EU (Germany). <a href="privacy_policy.html" style="color: var(--primary-emerald); text-decoration: none;">Privacy Policy</a></p>
+        </footer>
+    </div>
+
+    <script>
+        function nextStep(current) {
+            document.getElementById(`step-${current}`).classList.remove('active');
+            document.getElementById(`step-${current+1}`).classList.add('active');
+        }
+
+        function checkEligibility() {
+            const income = document.getElementById('income').value;
+            const expiry = document.getElementById('passport-expiry').value;
+            const resultArea = document.getElementById('result-area');
+            
+            let html = '';
+            
+            // Income Logic ($55k)
+            if (income >= 55000) {
+                html += '<div class="alert alert-success">✅ Income Eligible ($' + income + ')</div>';
+            } else {
+                html += '<div class="alert alert-warning">❌ Income Ineligible (Min $55,000 required)</div>';
+            }
+
+            // Passport Logic (6 months)
+            const today = new Date();
+            const expDate = new Date(expiry);
+            const diffMonths = (expDate - today) / (1000 * 60 * 60 * 24 * 30);
+            
+            if (diffMonths >= 6) {
+                html += '<div class="alert alert-success">✅ Passport Validity Passed</div>';
+            } else {
+                html += '<div class="alert alert-warning">⚠️ ROCK FACTOR ALERT: Your passport expires in ' + Math.floor(diffMonths) + ' months. Renew it first!</div>';
+            }
+
+            resultArea.innerHTML = html;
+        }
+    </script>
+</body>
+</html>

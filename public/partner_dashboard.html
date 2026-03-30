@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VizaBot KE | Partner Dashboard</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
+        .stat-card { text-align: center; }
+        .stat-card h4 { color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .stat-card .value { font-size: 2rem; font-weight: 800; color: var(--primary-emerald); }
+        table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+        th, td { text-align: left; padding: 1rem; border-bottom: 1px solid var(--glass-border); }
+        th { color: var(--text-muted); font-size: 0.8rem; }
+        .status-pill { padding: 0.25rem 0.5rem; border-radius: 99px; font-size: 0.7rem; font-weight: 800; }
+        .status-active { background: rgba(16, 185, 129, 0.1); color: var(--primary-emerald); }
+    </style>
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="container" style="padding-top: 4rem;">
+        <div class="glass-card">
+            <h2 style="margin-bottom: 0.5rem;">Partner Portal: <span style="color: var(--primary-emerald);">BeachVillas Diani</span></h2>
+            <p style="color: var(--text-muted);">Tracking your 'Nomad-Standard' leads and property uptime.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card glass-card">
+                    <h4>Total Leads</h4>
+                    <div class="value">124</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <h4>Conversions</h4>
+                    <div class="value">18</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <h4>Current Uptime</h4>
+                    <div class="value">99.8%</div>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lead Name</th>
+                        <th>Interest Date</th>
+                        <th>Target Duration</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alex (Berlin)</td>
+                        <td>Mar 05, 2026</td>
+                        <td>12 Months</td>
+                        <td><span class="status-pill status-active">ACTIVE AUDIT</span></td>
+                    </tr>
+                    <tr>
+                        <td>Sarah (London)</td>
+                        <td>Mar 04, 2026</td>
+                        <td>24 Months</td>
+                        <td><span class="status-pill status-active" style="background: rgba(251, 191, 36, 0.1); color: var(--accent-gold);">BOOKED</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
