@@ -30,7 +30,7 @@ const Footer = () => {
           <div className="logo-container" style={{ marginBottom: '1.5rem', cursor: 'default' }}>
             <Globe className="logo-icon" size={32} />
             <div className="logo">
-              VizaBot <span className="logo-accent">KE</span>
+              Digital Nomad <span className="logo-accent">Kenya</span>
             </div>
           </div>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', lineHeight: '1.6' }}>
@@ -43,17 +43,20 @@ const Footer = () => {
           <h4 style={{ marginBottom: '1.5rem', color: 'var(--text-white)', fontSize: '1rem' }}>Company</h4>
           <ul style={{ listStyle: 'none', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
             <li style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <Building size={14} color="var(--primary-emerald)" /> About Us
+              <Building size={14} color="var(--primary-emerald)" />
+              <Link to="/about" style={{ color: 'inherit', textDecoration: 'none' }}>About Us</Link>
             </li>
             <li style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <Users size={14} color="var(--primary-emerald)" /> 
+              <Users size={14} color="var(--primary-emerald)" />
               <Link to="/partner" style={{ color: 'inherit', textDecoration: 'none' }}>Partner Portal</Link>
             </li>
             <li style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <Shield size={14} color="var(--primary-emerald)" /> Privacy Policy
+              <Shield size={14} color="var(--primary-emerald)" />
+              <Link to="/privacy" style={{ color: 'inherit', textDecoration: 'none' }}>Privacy Policy</Link>
             </li>
             <li style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <FileText size={14} color="var(--primary-emerald)" /> Terms of Service
+              <FileText size={14} color="var(--primary-emerald)" />
+              <Link to="/terms" style={{ color: 'inherit', textDecoration: 'none' }}>Terms of Service</Link>
             </li>
           </ul>
         </div>
@@ -63,13 +66,16 @@ const Footer = () => {
           <h4 style={{ marginBottom: '1.5rem', color: 'var(--text-white)', fontSize: '1rem' }}>Resources</h4>
           <ul style={{ listStyle: 'none', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
             <li style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <MapPin size={14} color="var(--accent-gold)" /> Diani Guide
+              <MapPin size={14} color="var(--accent-gold)" />
+              <Link to="/immigration-guide/diani" style={{ color: 'inherit', textDecoration: 'none' }}>Diani Guide</Link>
             </li>
             <li style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <Wifi size={14} color="var(--accent-gold)" /> Nairobi Fiber Map
+              <Wifi size={14} color="var(--accent-gold)" />
+              <Link to="/guide/internet-speed" style={{ color: 'inherit', textDecoration: 'none' }}>Nairobi Fiber Map</Link>
             </li>
             <li style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-              <Hash size={14} color="var(--accent-gold)" /> KRA PIN Guide
+              <Hash size={14} color="var(--accent-gold)" />
+              <Link to="/guide/permit-requirements" style={{ color: 'inherit', textDecoration: 'none' }}>KRA PIN Guide</Link>
             </li>
           </ul>
         </div>

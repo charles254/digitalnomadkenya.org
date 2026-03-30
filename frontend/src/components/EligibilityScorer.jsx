@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import ShieldAlert from 'lucide-react/dist/esm/icons/shield-alert'
 import DollarSign from 'lucide-react/dist/esm/icons/dollar-sign'
@@ -9,6 +10,7 @@ import AlertOctagon from 'lucide-react/dist/esm/icons/alert-octagon'
 import HelpCircle from 'lucide-react/dist/esm/icons/help-circle'
 
 const EligibilityScorer = () => {
+  const navigate = useNavigate()
   const [income, setIncome] = useState(24000)
   const [employment, setEmployment] = useState('Foreign')
   const [history, setHistory] = useState('Clean')
@@ -113,7 +115,7 @@ const EligibilityScorer = () => {
           </div>
 
           <button 
-            onClick={() => window.location.href = '/audit'}
+            onClick={() => navigate('/audit')}
             className="btn-primary" 
             style={{ marginTop: '2.5rem', width: '100%', padding: '1.2rem' }}
           >

@@ -19,9 +19,37 @@ import PlaneTakeoff from 'lucide-react/dist/esm/icons/plane-takeoff'
 import Navbar from './Navbar'
 import Breadcrumbs from './Breadcrumbs'
 import Footer from './Footer'
+import { injectJSONLD, updateMetaTags, setCanonical } from '../utils/seo'
 
 const AuditSimulatorPage = () => {
   const [step, setStep] = useState(1)
+
+  React.useEffect(() => {
+    document.title = "Free Permit Audit Simulator: Digital Nomad Kenya"
+    updateMetaTags({
+      "description": "Take the free 60-second Class N Digital Nomad Permit audit. Check your eligibility, income requirements, and document readiness for Kenya immigration.",
+      "og:title": "Free Kenya Digital Nomad Permit Audit | Digital Nomad Kenya",
+      "og:description": "Check your eligibility for Kenya's Class N Digital Nomad Permit in 60 seconds. AI-powered document audit.",
+      "og:url": "https://digitalnomad.ke/audit",
+      "twitter:title": "Free Kenya Digital Nomad Permit Audit | Digital Nomad Kenya",
+      "twitter:description": "Check your eligibility for Kenya's Class N Digital Nomad Permit in 60 seconds."
+    })
+    setCanonical("https://digitalnomad.ke/audit")
+    injectJSONLD({
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Digital Nomad Kenya Permit Audit Simulator",
+      "url": "https://digitalnomad.ke/audit",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Free AI-powered eligibility audit for Kenya's Class N Digital Nomad Permit."
+    }, 'webapp-schema')
+  }, [])
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -64,7 +92,7 @@ const AuditSimulatorPage = () => {
       }, 4500)
     } catch (err) {
       setTimeout(() => {
-        setResult({ status: 'Error', message: 'Connection Timeout. Ensure VizaBot Backend is running.' })
+        setResult({ status: 'Error', message: 'Connection Timeout. Ensure Digital Nomad Kenya Backend is running.' })
         setStep(5)
       }, 4500)
     }
@@ -82,7 +110,7 @@ const AuditSimulatorPage = () => {
           >
             <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
               <UserCircle size={48} color="var(--primary-emerald)" style={{ marginBottom: '1rem' }} />
-              <h1 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>Identity & Intent</h1>
+              <h2 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>Identity & Intent</h2>
               <p style={{ color: 'var(--text-muted)' }}>Start your official 2026 Free Audit Simulator for the Class N Permit.</p>
             </div>
             
@@ -114,7 +142,7 @@ const AuditSimulatorPage = () => {
           >
             <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
               <DollarSign size={48} color="var(--accent-gold)" style={{ marginBottom: '1rem' }} />
-              <h1 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>Financial & Proof</h1>
+              <h2 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>Financial & Proof</h2>
               <p style={{ color: 'var(--text-muted)' }}>Official criteria requires stable income of $2,000/mo ($24k/year).</p>
             </div>
 
@@ -166,7 +194,7 @@ const AuditSimulatorPage = () => {
           >
             <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
               <History size={48} color="#3b82f6" style={{ marginBottom: '1rem' }} />
-              <h1 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>Legal Standing</h1>
+              <h2 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>Legal Standing</h2>
               <p style={{ color: 'var(--text-muted)' }}>Class N requires a clean criminal record (PCC).</p>
             </div>
             
@@ -211,7 +239,7 @@ const AuditSimulatorPage = () => {
             <div className="scan-animation" style={{ marginBottom: '2rem' }}>
               <FileSearch size={64} className="pulse-icon" color="var(--primary-emerald)" style={{ margin: '0 auto' }} />
             </div>
-            <h1 style={{ marginBottom: '1.5rem' }}>Simulating Legal Comparison...</h1>
+            <h2 style={{ marginBottom: '1.5rem' }}>Simulating Legal Comparison...</h2>
             <div style={{ maxWidth: '400px', margin: '0 auto', textAlign: 'left' }}>
               {[
                 { phase: 1, text: 'Benchmarking against Kenya Section NSSF Act 2026' },
@@ -248,9 +276,9 @@ const AuditSimulatorPage = () => {
                   ) : <AlertTriangle size={80} color="#ef4444" />}
                 </div>
                 
-                <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>
+                <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>
                   {result.status === 'Success' ? 'Check Your Inbox!' : 'Audit Failed'}
-                </h1>
+                </h2>
                 
                 <div style={{ background: 'var(--bg-glass-heavy)', border: '1px solid var(--border-glass)', padding: '2rem', borderRadius: '16px', marginBottom: '2.5rem' }}>
                   <p style={{ color: 'var(--text-white)', fontSize: '1.1rem', lineHeight: '1.6' }}>
@@ -288,6 +316,7 @@ const AuditSimulatorPage = () => {
       <main className="container" style={{ paddingTop: '8rem', paddingBottom: '8rem', minHeight: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
         <div style={{ width: '100%', maxWidth: '700px', alignSelf: 'center', marginBottom: '2rem' }}>
           <Breadcrumbs />
+          <h1 style={{ fontSize: '1.75rem', textAlign: 'center', marginTop: '1rem' }}>Free Kenya Digital Nomad Permit Audit</h1>
         </div>
         <div className="gradient-border-wrap" style={{ width: '100%', maxWidth: '700px' }}>
           <div className="glass-card">

@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import Navbar from './Navbar'
 import Hero from './Hero'
@@ -9,12 +10,12 @@ import Requirements from './Requirements'
 import Testimonials from './Testimonials'
 import Pricing from './Pricing'
 import Footer from './Footer'
-import { injectJSONLD } from '../utils/seo'
+import { injectJSONLD, setCanonical } from '../utils/seo'
 
 const LandingPage = () => {
 
   React.useEffect(() => {
-    document.title = "VizaBot KE: Kenya's #1 Digital Nomad Permit Automation"
+    document.title = "Digital Nomad Kenya"
     
     const metaDesc = document.querySelector('meta[name="description"]')
     const descText = "Automate your Kenya Class N Digital Nomad permit application. Verified success for remote workers, premium document audit, and seamless expat logistics in Kenya."
@@ -28,13 +29,15 @@ const LandingPage = () => {
       document.head.appendChild(meta)
     }
 
+    setCanonical("https://digitalnomad.ke/")
+
     // Organization Schema
     injectJSONLD({
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "VizaBot KE",
-      "url": "https://vizabot.ke",
-      "logo": "https://vizabot.ke/logo.png",
+      "name": "Digital Nomad Kenya",
+      "url": "https://digitalnomad.ke",
+      "logo": "https://digitalnomad.ke/logo.png",
       "sameAs": [
         "https://twitter.com/vizabotke",
         "https://linkedin.com/company/vizabot-ke"
@@ -48,7 +51,7 @@ const LandingPage = () => {
       "serviceType": "Kenyan Immigration Automation",
       "provider": {
         "@type": "Organization",
-        "name": "VizaBot KE"
+        "name": "Digital Nomad Kenya"
       },
       "areaServed": "Kenya",
       "hasOfferCatalog": {
@@ -72,10 +75,24 @@ const LandingPage = () => {
         ]
       }
     }, 'service-schema');
+
+    // HowTo Schema
+    injectJSONLD({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Get a Kenya Digital Nomad Permit",
+      "description": "A 3-step process to automate your Kenya Class N Digital Nomad permit application.",
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Secure Document Upload", "text": "Create your secure portal, enter your passport expiry date, and upload stamped bank statements." },
+        { "@type": "HowToStep", "position": 2, "name": "Real-time Digital Audit", "text": "Our system scans for rock factors like invalid stamps and expiring passports instantly." },
+        { "@type": "HowToStep", "position": 3, "name": "Get Your Dossier", "text": "Download a legally compliant PDF application packet ready to submit to the Kenyan e-Citizen portal." }
+      ]
+    }, 'howto-schema');
   }, [])
 
+  const navigate = useNavigate()
   const handleStart = () => {
-    window.location.href = '/audit'
+    navigate('/audit')
   }
 
   return (

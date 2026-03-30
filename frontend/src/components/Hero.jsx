@@ -55,12 +55,12 @@ const Hero = ({ onStart }) => {
           background: 'linear-gradient(to bottom, #fff 30%, #a1a1aa 100%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent'
-        }}>Digital Nomad Kenya:</span><br />
-        <span style={{ 
+        }}>Kenya Digital Nomad Permit:</span><br />
+        <span style={{
           background: 'linear-gradient(135deg, var(--primary-emerald) 0%, #34d399 50%, var(--accent-gold) 100%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent'
-        }}>Permits Automated.</span>
+        }}>Automated in Seconds.</span>
       </motion.h1>
 
       <motion.p 
@@ -76,7 +76,7 @@ const Hero = ({ onStart }) => {
           opacity: 0.85
         }}
       >
-        VizaBot KE transforms the complex Class N permit into a seamless digital journey. 
+        Digital Nomad Kenya transforms the complex Class N permit into a seamless digital journey. 
         Verify your eligibility in seconds and get your secure application dossier.
       </motion.p>
 

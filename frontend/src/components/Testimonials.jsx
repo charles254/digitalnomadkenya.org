@@ -6,19 +6,19 @@ const testimonials = [
   {
     name: "Alex",
     role: "Senior UX Designer, Berlin",
-    quote: "I was stuck in loop with the e-Citizen portal. VizaBot audited my stamped statements and generated the exact cover letter I needed for my Class N. Approved in 14 days.",
+    quote: "I was stuck in loop with the e-Citizen portal. Digital Nomad Kenya audited my stamped statements and generated the exact cover letter I needed for my Class N. Approved in 14 days.",
     image: "https://i.pravatar.cc/100?img=11"
   },
   {
     name: "Marcus",
     role: "Crypto Trader, Cape Town",
-    quote: "The tax residency breakdown was a lifesaver. VizaBot explained how to maintain my nomad status without getting caught in the KRA's 183-day trap.",
+    quote: "The tax residency breakdown was a lifesaver. Digital Nomad Kenya explained how to maintain my nomad status without getting caught in the KRA's 183-day trap.",
     image: "https://i.pravatar.cc/100?img=12"
   },
   {
     name: "Elena",
     role: "Senior Dev, San Francisco",
-    quote: "I was worried about the internet in Diani. VizaBot's connectivity report guided me to the exact villa with Liquid Fiber. 100Mbps in paradise!",
+    quote: "I was worried about the internet in Diani. Digital Nomad Kenya's connectivity report guided me to the exact villa with Liquid Fiber. 100Mbps in paradise!",
     image: "https://i.pravatar.cc/100?img=22"
   },
   {
@@ -36,7 +36,7 @@ const testimonials = [
   {
     name: "Siddharth",
     role: "Marketing Lead, Bangalore",
-    quote: "The safest entry into the African tech scene. VizaBot didn't just give me a permit; they gave me a community. Highly recommend the VIP service for scaling your network.",
+    quote: "The safest entry into the African tech scene. Digital Nomad Kenya didn't just give me a permit; they gave me a community. Highly recommend the VIP service for scaling your network.",
     image: "https://i.pravatar.cc/100?img=60"
   }
 ]
@@ -66,7 +66,7 @@ const Testimonials = () => {
               "{t.quote}"
             </p>
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <img src={t.image} alt={t.name} style={{ width: '50px', height: '50px', borderRadius: '50%', border: '2px solid var(--primary-emerald)' }} />
+              <img src={t.image} alt={`${t.name} - Digital Nomad Kenya testimonial`} loading="lazy" style={{ width: '50px', height: '50px', borderRadius: '50%', border: '2px solid var(--primary-emerald)' }} />
               <div>
                 <h4 style={{ margin: 0, fontSize: '1.05rem' }}>{t.name}</h4>
                 <div style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>{t.role}</div>

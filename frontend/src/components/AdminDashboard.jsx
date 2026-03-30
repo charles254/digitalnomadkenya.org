@@ -13,6 +13,13 @@ import { Link } from 'react-router-dom'
 const getAxios = () => import('axios').then(m => m.default)
 
 const AdminDashboard = () => {
+  useEffect(() => {
+    let meta = document.querySelector('meta[name="robots"]')
+    if (!meta) { meta = document.createElement('meta'); meta.name = 'robots'; document.head.appendChild(meta) }
+    meta.content = 'noindex, nofollow'
+    return () => { meta.content = 'index, follow' }
+  }, [])
+
   const [leads, setLeads] = useState([])
   const [stats, setStats] = useState({
     total_leads: 0,
@@ -70,7 +77,7 @@ const AdminDashboard = () => {
             <div className="logo-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             </div>
-            <span className="logo">VizaBot<span className="logo-accent">KE</span> <span style={{ fontSize: '0.6rem', background: 'var(--accent-gold)', color: '#000', padding: '0.1rem 0.4rem', borderRadius: '4px', marginLeft: '0.5rem', verticalAlign: 'middle' }}>ADMIN</span></span>
+            <span className="logo">Digital Nomad<span className="logo-accent">Kenya</span> <span style={{ fontSize: '0.6rem', background: 'var(--accent-gold)', color: '#000', padding: '0.1rem 0.4rem', borderRadius: '4px', marginLeft: '0.5rem', verticalAlign: 'middle' }}>ADMIN</span></span>
           </Link>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>

@@ -16,6 +16,12 @@ const statIcons = {
 }
 
 const PartnerDashboard = () => {
+  React.useEffect(() => {
+    let meta = document.querySelector('meta[name="robots"]')
+    if (!meta) { meta = document.createElement('meta'); meta.name = 'robots'; document.head.appendChild(meta) }
+    meta.content = 'noindex, nofollow'
+    return () => { meta.content = 'index, follow' }
+  }, [])
   const stats = [
     { label: "Total Leads", value: "124", icon: statIcons.leads, trend: "+12%" },
     { label: "Conversions", value: "18", icon: statIcons.conversions, trend: "+3%" },
@@ -42,7 +48,7 @@ const PartnerDashboard = () => {
             <div className="logo-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
             </div>
-            <span className="logo">VizaBot<span className="logo-accent">KE</span></span>
+            <span className="logo">Digital Nomad<span className="logo-accent">Kenya</span></span>
           </Link>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>

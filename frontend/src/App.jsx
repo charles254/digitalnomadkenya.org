@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate, useParams } from 'react-router-dom'
 
 const LandingPage = lazy(() => import('./components/LandingPage'))
 const PartnerDashboard = lazy(() => import('./components/PartnerDashboard'))
@@ -9,6 +9,19 @@ const TopicLandingPage = lazy(() => import('./components/TopicLandingPage'))
 const AuditSimulatorPage = lazy(() => import('./components/AuditSimulatorPage'))
 const SocialProof = lazy(() => import('./components/SocialProof'))
 const AdminDashboard = lazy(() => import('./components/AdminDashboard'))
+const AboutUs = lazy(() => import('./components/AboutUs'))
+const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy'))
+const TermsOfService = lazy(() => import('./components/TermsOfService'))
+
+const NomadRedirect = () => {
+  const { location } = useParams()
+  return <Navigate to={`/immigration-guide/${location}`} replace />
+}
+
+const NomadNatRedirect = () => {
+  const { location, nationality } = useParams()
+  return <Navigate to={`/immigration-guide/${location}/${nationality}`} replace />
+}
 
 function App() {
   return (
@@ -30,12 +43,15 @@ function App() {
         
         {/* Legacy Redirects */}
         <Route path="/nomad" element={<Navigate to="/immigration-guide" replace />} />
-        <Route path="/nomad/:location" element={<Navigate to="/immigration-guide/:location" replace />} />
-        <Route path="/nomad/:location/:nationality" element={<Navigate to="/immigration-guide/:location/:nationality" replace />} />
+        <Route path="/nomad/:location" element={<NomadRedirect />} />
+        <Route path="/nomad/:location/:nationality" element={<NomadNatRedirect />} />
         
         <Route path="/guide/:topic" element={<TopicLandingPage />} />
         <Route path="/audit" element={<AuditSimulatorPage />} />
         <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsOfService />} />
       </Routes>
       <SocialProof />
       </Suspense>

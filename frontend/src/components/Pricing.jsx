@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import Check from 'lucide-react/dist/esm/icons/check'
 import Star from 'lucide-react/dist/esm/icons/star'
@@ -8,6 +9,7 @@ import X from 'lucide-react/dist/esm/icons/x'
 import Send from 'lucide-react/dist/esm/icons/send'
 
 const Pricing = () => {
+  const navigate = useNavigate()
   const cards = [
     {
       title: "Eligibility Pass",
@@ -59,7 +61,7 @@ const Pricing = () => {
   return (
     <section className="pricing-section" id="pricing" style={{ marginTop: '8rem', paddingBottom: '4rem' }}>
       <div style={{ textAlign: 'center', marginBottom: '5rem' }}>
-        <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem', fontWeight: 800 }}>VizaBot <span className="logo-accent">Pricing</span></h2>
+        <h2 style={{ fontSize: '3rem', marginBottom: '1.5rem', fontWeight: 800 }}>Digital Nomad Kenya <span className="logo-accent">Pricing</span></h2>
         <p style={{ color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto' }}>
           Transparent, automated immigration logistics. Choose the tier that fits your relocation speed.
         </p>
@@ -188,9 +190,9 @@ const Pricing = () => {
                   if (card.isVip) {
                     setShowModal(true)
                   } else if (card.title === "Application Pack") {
-                    alert("Redirecting to secure Stripe checkout for VizaBot Application Pack ($20)...")
+                    alert("Redirecting to secure Stripe checkout for Digital Nomad Kenya Application Pack ($20)...")
                   } else {
-                    window.location.href = '/audit'
+                    navigate('/audit')
                   }
                 }}
               >

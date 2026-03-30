@@ -2,6 +2,13 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import ChevronRight from 'lucide-react/dist/esm/icons/chevron-right'
 import Home from 'lucide-react/dist/esm/icons/home'
+import pseoData from '../data/pseo_data.json'
+
+// Build lookup maps for proper display names
+const nameMap = {}
+pseoData.locations.forEach(l => { nameMap[l.id] = l.name })
+pseoData.nationalities.forEach(n => { nameMap[n.id] = n.name })
+pseoData.topics?.forEach(t => { nameMap[t.id] = t.keyword })
 
 const Breadcrumbs = () => {
   const location = useLocation()
@@ -12,6 +19,8 @@ const Breadcrumbs = () => {
 
   // Function to format the URL segments into human-readable text
   const formatSegment = (segment) => {
+    // Check lookup map first for proper names (e.g., "southafrican" → "South African")
+    if (nameMap[segment]) return nameMap[segment]
     return segment
       .split('-')
       .map(word => word.charAt(0).toUpperCase() + word.slice(1))

@@ -58,7 +58,7 @@ const Navbar = () => {
         <Link to="/" className="logo-container" style={{ textDecoration: 'none' }}>
           <Globe className="logo-icon" size={32} />
           <div className="logo">
-            VizaBot <span className="logo-accent">KE</span>
+            Digital Nomad <span className="logo-accent">Kenya</span>
           </div>
         </Link>
 

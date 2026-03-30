@@ -6,7 +6,7 @@ import Breadcrumbs from './Breadcrumbs'
 import Footer from './Footer'
 import Roadmap from './Roadmap'
 import pseoData from '../data/pseo_data.json'
-import { injectJSONLD } from '../utils/seo'
+import { injectJSONLD, updateMetaTags, setCanonical } from '../utils/seo'
 import MapPin from 'lucide-react/dist/esm/icons/map-pin'
 import Globe from 'lucide-react/dist/esm/icons/globe'
 import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right'
@@ -29,9 +29,9 @@ const NomadDirectory = () => {
 
   React.useEffect(() => {
     if (featuredLocation) {
-      document.title = `${featuredLocation.name} Digital Nomad Guide: Legal & Logistics Guides`
+      document.title = `${featuredLocation.name} Digital Nomad Guide: Digital Nomad Kenya`
     } else {
-      document.title = "Official Kenya Legal Guide: Immigration, Tax & Settlement Guide"
+      document.title = "Immigration, Tax & Settlement Guide: Digital Nomad Kenya"
     }
     
     const metaDesc = document.querySelector('meta[name="description"]')
@@ -39,21 +39,29 @@ const NomadDirectory = () => {
       ? `The ultimate digital nomad guide for ${featuredLocation.name}, Kenya. Detailed legal, internet, and lifestyle information for all nationalities.`
       : "The authoritative 2026 Kenya Legal Guide. Everything you need to know about Class N Permits, KRA PINs, Tax Residency, and Foreign Investor registration."
     
-    if (metaDesc) {
-      metaDesc.setAttribute("content", descText)
-    } else {
-      const meta = document.createElement('meta')
-      meta.name = "description"
-      meta.content = descText
-      document.head.appendChild(meta)
-    }
+    const pageTitle = featuredLocation
+      ? `${featuredLocation.name} Digital Nomad Guide | Digital Nomad Kenya`
+      : "Official Kenya Legal Guide | Digital Nomad Kenya"
+    const pageUrl = featuredLocation
+      ? `https://digitalnomad.ke/immigration-guide/${featuredLocation.id}`
+      : "https://digitalnomad.ke/immigration-guide"
+
+    updateMetaTags({
+      "description": descText,
+      "og:title": pageTitle,
+      "og:description": descText,
+      "og:url": pageUrl,
+      "twitter:title": pageTitle,
+      "twitter:description": descText
+    })
+    setCanonical(pageUrl)
 
     // Breadcrumb Schema
     const breadcrumbs = [{
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://vizabot.ke"
+      "item": "https://digitalnomad.ke"
     }];
 
     if (featuredLocation) {
@@ -61,19 +69,19 @@ const NomadDirectory = () => {
         "@type": "ListItem",
         "position": 2,
       "name": "Immigration Guide",
-      "item": "https://vizabot.ke/immigration-guide"
+      "item": "https://digitalnomad.ke/immigration-guide"
     }, {
       "@type": "ListItem",
       "position": 3,
       "name": featuredLocation.name,
-      "item": `https://vizabot.ke/immigration-guide/${featuredLocation.id}`
+      "item": `https://digitalnomad.ke/immigration-guide/${featuredLocation.id}`
     });
   } else {
     breadcrumbs.push({
       "@type": "ListItem",
       "position": 2,
       "name": "Immigration Guide",
-      "item": "https://vizabot.ke/immigration-guide"
+      "item": "https://digitalnomad.ke/immigration-guide"
     });
   }
     injectJSONLD({
@@ -81,6 +89,40 @@ const NomadDirectory = () => {
       "@type": "BreadcrumbList",
       "itemListElement": breadcrumbs
     }, 'breadcrumb-schema');
+
+    // Place Schema for location hub pages
+    if (featuredLocation) {
+      injectJSONLD({
+        "@context": "https://schema.org",
+        "@type": "Place",
+        "name": featuredLocation.name,
+        "description": featuredLocation.description_long,
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": featuredLocation.region,
+          "addressCountry": "KE"
+        },
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Internet", "value": featuredLocation.internet },
+          { "@type": "LocationFeatureSpecification", "name": "Vibe", "value": featuredLocation.vibe },
+          { "@type": "LocationFeatureSpecification", "name": "Rent Range", "value": featuredLocation.rent }
+        ]
+      }, 'place-schema');
+    }
+
+    // FAQPage Schema (only on main directory page)
+    if (!featuredLocation) {
+      injectJSONLD({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How long does a Class N (Nomad) permit take?", "acceptedAnswer": { "@type": "Answer", "text": "Official processing is 2-4 weeks, though we recommend allowing 60 days for unforeseen delays on the e-FNS portal." }},
+          { "@type": "Question", "name": "Do I need a Kenya trust account?", "acceptedAnswer": { "@type": "Answer", "text": "No, but you must prove you have at least $55,000 USD in annual income for Class N eligibility." }},
+          { "@type": "Question", "name": "Can I work for Kenyan companies?", "acceptedAnswer": { "@type": "Answer", "text": "Generally, Class N permits are for foreign source income only. To work locally, you require a Class D permit." }},
+          { "@type": "Question", "name": "How do I get my KRA PIN as a non-resident?", "acceptedAnswer": { "@type": "Answer", "text": "You can apply via the iTax portal, but it requires a 'Nominee' or official representation which Digital Nomad Kenya automates." }}
+        ]
+      }, 'faq-schema');
+    }
   }, [locId])
 
   const knowledgeHubs = [
@@ -88,39 +130,39 @@ const NomadDirectory = () => {
       title: "Immigration & Permits",
       icon: <ShieldCheck size={28} color="var(--primary-emerald)" />,
       items: [
-        { name: "Class N (Digital Nomad)", path: "/guide/digital-nomad-visa" },
-        { name: "Class G (Investors)", path: "/guide/class-g-investor-permit" },
-        { name: "Permanent Residency", path: "/guide/permanent-residency" },
-        { name: "Dependent Passes", path: "/guide/family-dependents" }
+        { name: "Class N (Digital Nomad)", path: "/guide/permit-requirements" },
+        { name: "Cost of Living Guide", path: "/guide/cost-of-living" },
+        { name: "Safety & Logistics", path: "/guide/safety-for-expats" },
+        { name: "Internet & Uptime", path: "/guide/internet-speed" }
       ]
     },
     {
-      title: "Tax & Compliance",
+      title: "Audit & Tools",
       icon: <Scale size={28} color="var(--accent-gold)" />,
       items: [
-        { name: "KRA PIN Registration", path: "/guide/kra-pin-guide" },
-        { name: "Tax Residency Rules", path: "/guide/tax-residency" },
-        { name: "Double Taxation Treaties", path: "/guide/taxation" },
-        { name: "Foreign Bank Accounts", path: "/guide/banking" }
+        { name: "Free Permit Audit", path: "/audit" },
+        { name: "Visa Requirements", path: "/guide/permit-requirements" },
+        { name: "Connectivity Auditor", path: "/guide/internet-speed" },
+        { name: "Living Cost Calculator", path: "/guide/cost-of-living" }
       ]
     },
     {
-      title: "Business & Assets",
+      title: "Location Guides",
       icon: <Building2 size={28} color="#3b82f6" />,
       items: [
-        { name: "Company Incorporation", path: "/guide/business-setup" },
-        { name: "Real Estate Laws", path: "/guide/housing" },
-        { name: "Local Hiring Compliance", path: "/guide/hiring" },
-        { name: "Data Protection Act", path: "/guide/internet" }
+        { name: "Diani Beach", path: "/immigration-guide/diani" },
+        { name: "Kilimani, Nairobi", path: "/immigration-guide/kilimani" },
+        { name: "Lamu Island", path: "/immigration-guide/lamu" },
+        { name: "Nanyuki", path: "/immigration-guide/nanyuki" }
       ]
     }
   ]
 
   const faqs = [
     { q: "How long does a Class N (Nomad) permit take?", a: "Official processing is 2-4 weeks, though we recommend allowing 60 days for unforeseen delays on the e-FNS portal." },
-    { q: "Do I need a Kenya trust account?", a: "No, but you must prove you have at least $55,000 USD in annual income for Class N eligibility." },
+    { q: "Do I need a Kenya trust account?", a: "No, but you must prove you have at least $24,000 USD in annual income for Class N eligibility." },
     { q: "Can I work for Kenyan companies?", a: "Generally, Class N permits are for foreign source income only. To work locally, you require a Class D permit." },
-    { q: "How do I get my KRA PIN as a non-resident?", a: "You can apply via the iTax portal, but it requires a 'Nominee' or official representation which VizaBot automates." }
+    { q: "How do I get my KRA PIN as a non-resident?", a: "You can apply via the iTax portal, but it requires a 'Nominee' or official representation which Digital Nomad Kenya automates." }
   ]
 
   return (
@@ -171,7 +213,7 @@ const NomadDirectory = () => {
                   <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Browse comprehensive guides on Taxes, Visas, & Settlement.</p>
                 </Link>
                 <div 
-                    onClick={() => window.location.href='mailto:concierge@vizabot.ke'}
+                    onClick={() => window.location.href='mailto:concierge@digitalnomad.ke'}
                     className="glass-card hover-card" 
                     style={{ textDecoration: 'none', padding: '2.5rem', cursor: 'pointer' }}
                 >

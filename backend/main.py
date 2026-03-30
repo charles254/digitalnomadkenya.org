@@ -36,7 +36,7 @@ class AuditRequest(BaseModel):
     email: EmailStr
     income: float = Field(..., gt=0)
     permit_class: str = Field(..., pattern="^[NG]$")
-    passport_expiry: str = Field(..., pattern="^\d{4}-\d{2}-\d{2}$")
+    passport_expiry: str = Field(..., pattern=r"^\d{4}-\d{2}-\d{2}$")
     is_bank_statement_stamped: bool
     is_vip: bool = False
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams, Navigate, Link } from 'react-router-dom'
+import { useParams, Navigate, Link, useNavigate } from 'react-router-dom'
 import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right'
 import BookOpen from 'lucide-react/dist/esm/icons/book-open'
 import CheckCircle from 'lucide-react/dist/esm/icons/check-circle'
@@ -23,9 +23,9 @@ const TopicLandingPage = () => {
 
   React.useEffect(() => {
     if (topicData) {
-      const pageTitle = `${topicData.title} | VizaBot KE`
+      const pageTitle = `${topicData.title}: Digital Nomad Kenya`
       const pageDesc = `${topicData.desc} Verified expert insights for digital nomads in Kenya. Includes ${topicData.entities.join(', ')}.`
-      const pageUrl = `https://vizabot.ke/guide/${topicData.id}`
+      const pageUrl = `https://digitalnomad.ke/guide/${topicData.id}`
 
       document.title = pageTitle
       
@@ -48,14 +48,14 @@ const TopicLandingPage = () => {
         "description": topicData.desc,
         "author": {
           "@type": "Organization",
-          "name": "VizaBot KE"
+          "name": "Digital Nomad Kenya"
         },
         "publisher": {
           "@type": "Organization",
-          "name": "VizaBot KE",
+          "name": "Digital Nomad Kenya",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://vizabot.ke/globe_favicon.png"
+            "url": "https://digitalnomad.ke/globe_favicon.png"
           }
         },
         "datePublished": "2026-03-06",
@@ -73,12 +73,12 @@ const TopicLandingPage = () => {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://vizabot.ke"
+          "item": "https://digitalnomad.ke"
         },{
           "@type": "ListItem",
           "position": 2,
           "name": "Immigration Guide",
-          "item": "https://vizabot.ke/immigration-guide"
+          "item": "https://digitalnomad.ke/immigration-guide"
         },{
           "@type": "ListItem",
           "position": 3,
@@ -86,6 +86,19 @@ const TopicLandingPage = () => {
           "item": pageUrl
         }]
       }, 'breadcrumb-schema');
+
+      // FAQPage Schema
+      if (topicData.faqs && topicData.faqs.length > 0) {
+        injectJSONLD({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": topicData.faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+          }))
+        }, 'faq-schema');
+      }
     }
   }, [topicId])
 
@@ -93,8 +106,9 @@ const TopicLandingPage = () => {
     return <Navigate to="/immigration-guide" replace />
   }
 
+  const navigate = useNavigate()
   const handleStart = () => {
-    window.location.href = '/audit'
+    navigate('/audit')
   }
 
   return (
@@ -111,7 +125,7 @@ const TopicLandingPage = () => {
             {topicData.title}
           </h1>
           <p className="hero-subtitle" style={{ maxWidth: '800px', margin: '2rem auto' }}>
-            {topicData.desc} Managed by VizaBot KE – Kenya's standard for immigration automation and expat logistics.
+            {topicData.desc} Managed by Digital Nomad Kenya – Kenya's standard for immigration automation and expat logistics.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
             {topicData.entities.map((entity, i) => (
@@ -191,7 +205,7 @@ const TopicLandingPage = () => {
             <div>
               <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Deep Dive: {topicData.keyword}</h2>
               <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', lineHeight: '1.8', fontSize: '1.1rem' }}>
-                Navigating {topicData.keyword} in a new country can be daunting. VizaBot KE's data engine provides 
+                Navigating {topicData.keyword} in a new country can be daunting. Digital Nomad Kenya's data engine provides 
                 real-time insights for the tech-savvy professional. Whether you're planning a relocation to Diani or 
                 a short-term stint in Nairobi, understanding these core pillars is essential for a frictionless experience.
               </p>

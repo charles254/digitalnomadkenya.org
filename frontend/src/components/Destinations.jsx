@@ -155,10 +155,11 @@ const Destinations = () => {
               style={{ overflow: 'hidden', padding: 0 }}
             >
               <div style={{ height: '300px', position: 'relative' }}>
-                <img 
-                  src={dest.image} 
-                  alt={dest.name} 
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                <img
+                  src={dest.image}
+                  alt={`${dest.name} - Digital nomad destination in Kenya`}
+                  loading="lazy"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, var(--bg-dark), transparent)' }}></div>
                 <div style={{ position: 'absolute', bottom: '1.5rem', left: '1.5rem' }}>

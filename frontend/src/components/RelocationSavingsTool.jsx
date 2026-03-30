@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import TrendingDown from 'lucide-react/dist/esm/icons/trending-down'
 import Users from 'lucide-react/dist/esm/icons/users'
@@ -6,9 +7,13 @@ import Wallet from 'lucide-react/dist/esm/icons/wallet'
 import PlaneTakeoff from 'lucide-react/dist/esm/icons/plane-takeoff'
 import ShieldCheck from 'lucide-react/dist/esm/icons/shield-check'
 
-const RelocationSavingsTool = ({ nationalityName, targetLocation, onStart }) => {
+const RelocationSavingsTool = ({ nationalityName, targetLocation, locationRent, onStart }) => {
+  const navigate = useNavigate()
   const [homeRent, setHomeRent] = useState(2500)
-  const kenyaRent = 800 // Contextual average for premium expat housing
+  // Parse average rent from location data range (e.g., "$600 - $1,200" → 900)
+  const kenyaRent = locationRent
+    ? Math.round((parseInt(locationRent.split('-')[0].replace(/\D/g, '')) + parseInt(locationRent.split('-')[1].replace(/\D/g, ''))) / 2)
+    : 800
 
   const monthlySavings = homeRent > kenyaRent ? homeRent - kenyaRent : 0
   const yearlySavings = monthlySavings * 12
@@ -79,7 +84,7 @@ const RelocationSavingsTool = ({ nationalityName, targetLocation, onStart }) => 
           </div>
 
           <button 
-            onClick={() => window.location.href = '/audit'}
+            onClick={() => navigate('/audit')}
             className="btn-primary" 
             style={{ marginTop: '2rem', width: '100%', background: 'var(--accent-gold)', color: 'var(--bg-dark)' }}
           >

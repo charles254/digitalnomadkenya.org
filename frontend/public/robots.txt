@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /partner
+Disallow: /admin
 
-Sitemap: https://vizabot.ke/sitemap.xml
+Sitemap: https://digitalnomad.ke/sitemap.xml
