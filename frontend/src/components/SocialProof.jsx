@@ -68,7 +68,7 @@ const SocialProof = () => {
             </p>
             <p className="social-proof-time">{currentNotification.time}</p>
           </div>
-          <button className="social-proof-close" onClick={() => setIsVisible(false)}>
+          <button className="social-proof-close" aria-label="Close notification" onClick={() => setIsVisible(false)}>
             <X size={14} />
           </button>
         </m.div>
