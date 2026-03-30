@@ -30,16 +30,16 @@ const AuditSimulatorPage = () => {
       "description": "Take the free 60-second Class N Digital Nomad Permit audit. Check your eligibility, income requirements, and document readiness for Kenya immigration.",
       "og:title": "Free Kenya Digital Nomad Permit Audit | Digital Nomad Kenya",
       "og:description": "Check your eligibility for Kenya's Class N Digital Nomad Permit in 60 seconds. AI-powered document audit.",
-      "og:url": "https://digitalnomad.ke/audit",
+      "og:url": "https://digitalnomadkenya.org/audit",
       "twitter:title": "Free Kenya Digital Nomad Permit Audit | Digital Nomad Kenya",
       "twitter:description": "Check your eligibility for Kenya's Class N Digital Nomad Permit in 60 seconds."
     })
-    setCanonical("https://digitalnomad.ke/audit")
+    setCanonical("https://digitalnomadkenya.org/audit")
     injectJSONLD({
       "@context": "https://schema.org",
       "@type": "WebApplication",
       "name": "Digital Nomad Kenya Permit Audit Simulator",
-      "url": "https://digitalnomad.ke/audit",
+      "url": "https://digitalnomadkenya.org/audit",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
       "offers": {
@@ -81,7 +81,7 @@ const AuditSimulatorPage = () => {
     setTimeout(() => setScanningPhase(3), 3000)
     
     try {
-      const resp = await (await getAxios()).post('http://localhost:8000/audit', {
+      const resp = await (await getAxios()).post('/api/audit', {
         ...formData,
         is_bank_statement_stamped: true
       })

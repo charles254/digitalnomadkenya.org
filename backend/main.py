@@ -25,7 +25,7 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 # Restrict CORS for Production Alignment
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "https://vizabot.ke"],
+    allow_origins=["http://localhost:5173", "https://digitalnomadkenya.org"],
     allow_credentials=True,
     allow_methods=["GET", "POST"],
     allow_headers=["*"],

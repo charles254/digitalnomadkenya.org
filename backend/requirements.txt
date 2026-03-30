@@ -2,5 +2,6 @@ fastapi
 uvicorn
 python-multipart
 python-dotenv
-pydantic
+pydantic[email]
 slowapi
+fpdf2

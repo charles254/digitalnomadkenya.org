@@ -3,4 +3,4 @@ Allow: /
 Disallow: /partner
 Disallow: /admin
 
-Sitemap: https://digitalnomad.ke/sitemap.xml
+Sitemap: https://digitalnomadkenya.org/sitemap.xml

@@ -10,9 +10,9 @@ const TermsOfService = () => {
       "description": "Digital Nomad Kenya Terms of Service. Understand the terms governing your use of our Kenya digital nomad permit automation platform.",
       "og:title": "Terms of Service | Digital Nomad Kenya",
       "og:description": "Terms governing Digital Nomad Kenya services.",
-      "og:url": "https://digitalnomad.ke/terms"
+      "og:url": "https://digitalnomadkenya.org/terms"
     })
-    setCanonical("https://digitalnomad.ke/terms")
+    setCanonical("https://digitalnomadkenya.org/terms")
   }, [])
 
   return (
@@ -51,7 +51,7 @@ const TermsOfService = () => {
 
             <section>
               <h2 style={{ color: 'var(--text-white)', fontSize: '1.5rem', marginBottom: '1rem' }}>6. Contact</h2>
-              <p>For questions about these terms, contact us at legal@digitalnomad.ke or write to: Digital Nomad Kenya, Nairobi, Kenya.</p>
+              <p>For questions about these terms, contact us at legal@digitalnomadkenya.org or write to: Digital Nomad Kenya, Nairobi, Kenya.</p>
             </section>
           </div>
         </div>

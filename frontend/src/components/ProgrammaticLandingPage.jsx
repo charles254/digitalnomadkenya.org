@@ -30,7 +30,7 @@ const ProgrammaticLandingPage = () => {
     if (locationData && nationalityData) {
       const pageTitle = `${locationData.name} Guide for ${nationalityData.plural}: Kenya Digital Nomad Permit`
       const pageDesc = `Learn how ${nationalityData.name} citizens can move to ${locationData.name}, Kenya. Automated Class N permit audit, cost of living for ${nationalityData.plural}, and internet speed guide.`
-      const pageUrl = `https://digitalnomad.ke/immigration-guide/${locationData.id}/${nationalityData.id}`
+      const pageUrl = `https://digitalnomadkenya.org/immigration-guide/${locationData.id}/${nationalityData.id}`
 
       document.title = pageTitle
       
@@ -70,17 +70,17 @@ const ProgrammaticLandingPage = () => {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://digitalnomad.ke"
+          "item": "https://digitalnomadkenya.org"
         },{
           "@type": "ListItem",
           "position": 2,
           "name": "Immigration Guide",
-          "item": "https://digitalnomad.ke/immigration-guide"
+          "item": "https://digitalnomadkenya.org/immigration-guide"
         },{
           "@type": "ListItem",
           "position": 3,
           "name": locationData.name,
-          "item": `https://digitalnomad.ke/immigration-guide/${locationData.id}`
+          "item": `https://digitalnomadkenya.org/immigration-guide/${locationData.id}`
         },{
           "@type": "ListItem",
           "position": 4,

@@ -33,8 +33,8 @@ const AdminDashboard = () => {
     try {
       const axios = await getAxios()
       const [leadsRes, statsRes] = await Promise.all([
-        axios.get('http://localhost:8000/admin/leads'),
-        axios.get('http://localhost:8000/admin/stats')
+        axios.get('/api/admin/leads'),
+        axios.get('/api/admin/stats')
       ])
       setLeads(leadsRes.data)
       setStats(statsRes.data)

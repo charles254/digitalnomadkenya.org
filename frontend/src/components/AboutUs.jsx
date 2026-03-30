@@ -10,9 +10,9 @@ const AboutUs = () => {
       "description": "Digital Nomad Kenya is Kenya's leading digital nomad permit automation platform. Learn about our mission, team, and commitment to simplifying immigration for remote workers.",
       "og:title": "About Us | Digital Nomad Kenya",
       "og:description": "Kenya's leading digital nomad permit automation platform.",
-      "og:url": "https://digitalnomad.ke/about"
+      "og:url": "https://digitalnomadkenya.org/about"
     })
-    setCanonical("https://digitalnomad.ke/about")
+    setCanonical("https://digitalnomadkenya.org/about")
   }, [])
 
   return (
@@ -58,7 +58,7 @@ const AboutUs = () => {
 
             <section>
               <h2 style={{ color: 'var(--text-white)', fontSize: '1.5rem', marginBottom: '1rem' }}>Contact Us</h2>
-              <p>Have questions? Reach out at concierge@digitalnomad.ke or find us on Twitter @vizabotke. For partnership inquiries, visit our <a href="/partner" style={{ color: 'var(--primary-emerald)' }}>Partner Portal</a>.</p>
+              <p>Have questions? Reach out at concierge@digitalnomadkenya.org or find us on Twitter @vizabotke. For partnership inquiries, visit our <a href="/partner" style={{ color: 'var(--primary-emerald)' }}>Partner Portal</a>.</p>
             </section>
           </div>
         </div>

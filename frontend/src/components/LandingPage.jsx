@@ -29,15 +29,15 @@ const LandingPage = () => {
       document.head.appendChild(meta)
     }
 
-    setCanonical("https://digitalnomad.ke/")
+    setCanonical("https://digitalnomadkenya.org/")
 
     // Organization Schema
     injectJSONLD({
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Digital Nomad Kenya",
-      "url": "https://digitalnomad.ke",
-      "logo": "https://digitalnomad.ke/logo.png",
+      "url": "https://digitalnomadkenya.org",
+      "logo": "https://digitalnomadkenya.org/logo.png",
       "sameAs": [
         "https://twitter.com/vizabotke",
         "https://linkedin.com/company/vizabot-ke"

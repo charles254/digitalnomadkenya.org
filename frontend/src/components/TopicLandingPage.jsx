@@ -25,7 +25,7 @@ const TopicLandingPage = () => {
     if (topicData) {
       const pageTitle = `${topicData.title}: Digital Nomad Kenya`
       const pageDesc = `${topicData.desc} Verified expert insights for digital nomads in Kenya. Includes ${topicData.entities.join(', ')}.`
-      const pageUrl = `https://digitalnomad.ke/guide/${topicData.id}`
+      const pageUrl = `https://digitalnomadkenya.org/guide/${topicData.id}`
 
       document.title = pageTitle
       
@@ -55,7 +55,7 @@ const TopicLandingPage = () => {
           "name": "Digital Nomad Kenya",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://digitalnomad.ke/globe_favicon.png"
+            "url": "https://digitalnomadkenya.org/globe_favicon.png"
           }
         },
         "datePublished": "2026-03-06",
@@ -73,12 +73,12 @@ const TopicLandingPage = () => {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://digitalnomad.ke"
+          "item": "https://digitalnomadkenya.org"
         },{
           "@type": "ListItem",
           "position": 2,
           "name": "Immigration Guide",
-          "item": "https://digitalnomad.ke/immigration-guide"
+          "item": "https://digitalnomadkenya.org/immigration-guide"
         },{
           "@type": "ListItem",
           "position": 3,

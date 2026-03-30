@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://digitalnomad.ke/</loc>
+    <loc>https://digitalnomadkenya.org/</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -10,7 +10,7 @@
 
   <!-- Audit Page -->
   <url>
-    <loc>https://digitalnomad.ke/audit</loc>
+    <loc>https://digitalnomadkenya.org/audit</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -18,7 +18,7 @@
 
   <!-- Immigration Guide Hub -->
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -26,25 +26,25 @@
 
   <!-- Topic Guides (4) -->
   <url>
-    <loc>https://digitalnomad.ke/guide/cost-of-living</loc>
+    <loc>https://digitalnomadkenya.org/guide/cost-of-living</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/guide/internet-speed</loc>
+    <loc>https://digitalnomadkenya.org/guide/internet-speed</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/guide/permit-requirements</loc>
+    <loc>https://digitalnomadkenya.org/guide/permit-requirements</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/guide/safety-for-expats</loc>
+    <loc>https://digitalnomadkenya.org/guide/safety-for-expats</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -52,49 +52,49 @@
 
   <!-- Location Pages (8) -->
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/diani</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/diani</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kilimani</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kilimani</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/lamu</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/lamu</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/naivasha</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/naivasha</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/watamu</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/watamu</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/nanyuki</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/nanyuki</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kisumu</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kisumu</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/eldoret</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/eldoret</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -104,79 +104,79 @@
 
   <!-- Diani x 13 nationalities -->
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/diani/american</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/diani/american</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/diani/british</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/diani/british</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/diani/german</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/diani/german</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/diani/french</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/diani/french</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/diani/canadian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/diani/canadian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/diani/australian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/diani/australian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/diani/dutch</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/diani/dutch</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/diani/swedish</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/diani/swedish</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/diani/spanish</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/diani/spanish</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/diani/indian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/diani/indian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/diani/southafrican</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/diani/southafrican</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/diani/italian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/diani/italian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/diani/swiss</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/diani/swiss</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -184,79 +184,79 @@
 
   <!-- Kilimani x 13 nationalities -->
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kilimani/american</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kilimani/american</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kilimani/british</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kilimani/british</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kilimani/german</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kilimani/german</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kilimani/french</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kilimani/french</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kilimani/canadian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kilimani/canadian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kilimani/australian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kilimani/australian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kilimani/dutch</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kilimani/dutch</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kilimani/swedish</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kilimani/swedish</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kilimani/spanish</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kilimani/spanish</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kilimani/indian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kilimani/indian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kilimani/southafrican</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kilimani/southafrican</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kilimani/italian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kilimani/italian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kilimani/swiss</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kilimani/swiss</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -264,79 +264,79 @@
 
   <!-- Lamu x 13 nationalities -->
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/lamu/american</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/lamu/american</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/lamu/british</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/lamu/british</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/lamu/german</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/lamu/german</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/lamu/french</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/lamu/french</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/lamu/canadian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/lamu/canadian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/lamu/australian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/lamu/australian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/lamu/dutch</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/lamu/dutch</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/lamu/swedish</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/lamu/swedish</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/lamu/spanish</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/lamu/spanish</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/lamu/indian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/lamu/indian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/lamu/southafrican</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/lamu/southafrican</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/lamu/italian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/lamu/italian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/lamu/swiss</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/lamu/swiss</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -344,79 +344,79 @@
 
   <!-- Naivasha x 13 nationalities -->
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/naivasha/american</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/naivasha/american</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/naivasha/british</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/naivasha/british</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/naivasha/german</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/naivasha/german</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/naivasha/french</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/naivasha/french</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/naivasha/canadian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/naivasha/canadian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/naivasha/australian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/naivasha/australian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/naivasha/dutch</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/naivasha/dutch</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/naivasha/swedish</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/naivasha/swedish</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/naivasha/spanish</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/naivasha/spanish</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/naivasha/indian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/naivasha/indian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/naivasha/southafrican</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/naivasha/southafrican</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/naivasha/italian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/naivasha/italian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/naivasha/swiss</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/naivasha/swiss</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -424,79 +424,79 @@
 
   <!-- Watamu x 13 nationalities -->
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/watamu/american</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/watamu/american</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/watamu/british</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/watamu/british</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/watamu/german</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/watamu/german</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/watamu/french</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/watamu/french</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/watamu/canadian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/watamu/canadian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/watamu/australian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/watamu/australian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/watamu/dutch</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/watamu/dutch</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/watamu/swedish</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/watamu/swedish</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/watamu/spanish</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/watamu/spanish</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/watamu/indian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/watamu/indian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/watamu/southafrican</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/watamu/southafrican</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/watamu/italian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/watamu/italian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/watamu/swiss</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/watamu/swiss</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -504,79 +504,79 @@
 
   <!-- Nanyuki x 13 nationalities -->
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/nanyuki/american</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/nanyuki/american</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/nanyuki/british</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/nanyuki/british</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/nanyuki/german</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/nanyuki/german</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/nanyuki/french</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/nanyuki/french</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/nanyuki/canadian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/nanyuki/canadian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/nanyuki/australian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/nanyuki/australian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/nanyuki/dutch</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/nanyuki/dutch</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/nanyuki/swedish</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/nanyuki/swedish</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/nanyuki/spanish</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/nanyuki/spanish</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/nanyuki/indian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/nanyuki/indian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/nanyuki/southafrican</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/nanyuki/southafrican</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/nanyuki/italian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/nanyuki/italian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/nanyuki/swiss</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/nanyuki/swiss</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -584,79 +584,79 @@
 
   <!-- Kisumu x 13 nationalities -->
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kisumu/american</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kisumu/american</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kisumu/british</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kisumu/british</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kisumu/german</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kisumu/german</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kisumu/french</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kisumu/french</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kisumu/canadian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kisumu/canadian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kisumu/australian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kisumu/australian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kisumu/dutch</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kisumu/dutch</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kisumu/swedish</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kisumu/swedish</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kisumu/spanish</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kisumu/spanish</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kisumu/indian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kisumu/indian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kisumu/southafrican</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kisumu/southafrican</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kisumu/italian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kisumu/italian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/kisumu/swiss</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/kisumu/swiss</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -664,79 +664,79 @@
 
   <!-- Eldoret x 13 nationalities -->
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/eldoret/american</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/eldoret/american</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/eldoret/british</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/eldoret/british</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/eldoret/german</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/eldoret/german</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/eldoret/french</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/eldoret/french</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/eldoret/canadian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/eldoret/canadian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/eldoret/australian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/eldoret/australian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/eldoret/dutch</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/eldoret/dutch</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/eldoret/swedish</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/eldoret/swedish</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/eldoret/spanish</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/eldoret/spanish</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/eldoret/indian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/eldoret/indian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/eldoret/southafrican</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/eldoret/southafrican</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/eldoret/italian</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/eldoret/italian</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://digitalnomad.ke/immigration-guide/eldoret/swiss</loc>
+    <loc>https://digitalnomadkenya.org/immigration-guide/eldoret/swiss</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

@@ -10,9 +10,9 @@ const PrivacyPolicy = () => {
       "description": "Digital Nomad Kenya Privacy Policy. Learn how we collect, use, and protect your personal data during the Kenya digital nomad permit application process.",
       "og:title": "Privacy Policy | Digital Nomad Kenya",
       "og:description": "How Digital Nomad Kenya handles your personal data.",
-      "og:url": "https://digitalnomad.ke/privacy"
+      "og:url": "https://digitalnomadkenya.org/privacy"
     })
-    setCanonical("https://digitalnomad.ke/privacy")
+    setCanonical("https://digitalnomadkenya.org/privacy")
   }, [])
 
   return (
@@ -41,12 +41,12 @@ const PrivacyPolicy = () => {
 
             <section>
               <h2 style={{ color: 'var(--text-white)', fontSize: '1.5rem', marginBottom: '1rem' }}>4. Your Rights</h2>
-              <p>You may request access to, correction of, or deletion of your personal data at any time by contacting us at privacy@digitalnomad.ke. We comply with the Kenya Data Protection Act, 2019 and GDPR where applicable.</p>
+              <p>You may request access to, correction of, or deletion of your personal data at any time by contacting us at privacy@digitalnomadkenya.org. We comply with the Kenya Data Protection Act, 2019 and GDPR where applicable.</p>
             </section>
 
             <section>
               <h2 style={{ color: 'var(--text-white)', fontSize: '1.5rem', marginBottom: '1rem' }}>5. Contact</h2>
-              <p>For privacy inquiries, contact us at privacy@digitalnomad.ke or write to: Digital Nomad Kenya, Nairobi, Kenya.</p>
+              <p>For privacy inquiries, contact us at privacy@digitalnomadkenya.org or write to: Digital Nomad Kenya, Nairobi, Kenya.</p>
             </section>
           </div>
         </div>

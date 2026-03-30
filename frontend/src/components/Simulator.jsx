@@ -42,7 +42,7 @@ const Simulator = () => {
     
     try {
       // In a real app, you would also save formData (email, whatsapp) to your CRM here
-      const resp = await (await getAxios()).post('http://localhost:8000/audit', formData)
+      const resp = await (await getAxios()).post('/api/audit', formData)
       setTimeout(() => {
         setResult(resp.data)
         setStep(5)
@@ -57,7 +57,7 @@ const Simulator = () => {
 
   const downloadDossier = async () => {
     try {
-      const response = await (await getAxios()).post('http://localhost:8000/dossier', {
+      const response = await (await getAxios()).post('/api/dossier', {
         name: result.user_data.name,
         income: result.user_data.income,
         permit_class: result.user_data.permit_class

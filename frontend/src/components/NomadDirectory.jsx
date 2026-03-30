@@ -43,8 +43,8 @@ const NomadDirectory = () => {
       ? `${featuredLocation.name} Digital Nomad Guide | Digital Nomad Kenya`
       : "Official Kenya Legal Guide | Digital Nomad Kenya"
     const pageUrl = featuredLocation
-      ? `https://digitalnomad.ke/immigration-guide/${featuredLocation.id}`
-      : "https://digitalnomad.ke/immigration-guide"
+      ? `https://digitalnomadkenya.org/immigration-guide/${featuredLocation.id}`
+      : "https://digitalnomadkenya.org/immigration-guide"
 
     updateMetaTags({
       "description": descText,
@@ -61,7 +61,7 @@ const NomadDirectory = () => {
       "@type": "ListItem",
       "position": 1,
       "name": "Home",
-      "item": "https://digitalnomad.ke"
+      "item": "https://digitalnomadkenya.org"
     }];
 
     if (featuredLocation) {
@@ -69,19 +69,19 @@ const NomadDirectory = () => {
         "@type": "ListItem",
         "position": 2,
       "name": "Immigration Guide",
-      "item": "https://digitalnomad.ke/immigration-guide"
+      "item": "https://digitalnomadkenya.org/immigration-guide"
     }, {
       "@type": "ListItem",
       "position": 3,
       "name": featuredLocation.name,
-      "item": `https://digitalnomad.ke/immigration-guide/${featuredLocation.id}`
+      "item": `https://digitalnomadkenya.org/immigration-guide/${featuredLocation.id}`
     });
   } else {
     breadcrumbs.push({
       "@type": "ListItem",
       "position": 2,
       "name": "Immigration Guide",
-      "item": "https://digitalnomad.ke/immigration-guide"
+      "item": "https://digitalnomadkenya.org/immigration-guide"
     });
   }
     injectJSONLD({
@@ -213,7 +213,7 @@ const NomadDirectory = () => {
                   <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Browse comprehensive guides on Taxes, Visas, & Settlement.</p>
                 </Link>
                 <div 
-                    onClick={() => window.location.href='mailto:concierge@digitalnomad.ke'}
+                    onClick={() => window.location.href='mailto:concierge@digitalnomadkenya.org'}
                     className="glass-card hover-card" 
                     style={{ textDecoration: 'none', padding: '2.5rem', cursor: 'pointer' }}
                 >
