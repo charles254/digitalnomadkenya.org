@@ -148,9 +148,9 @@ const ProgrammaticLandingPage = () => {
               </h2>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                 <div>
-                  <h4 style={{ color: 'var(--text-white)', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <h3 style={{ color: 'var(--text-white)', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <Zap size={18} color="var(--primary-emerald)" /> Connectivity & Office
-                  </h4>
+                  </h3>
                   <p style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>{locationData.internet} available. {locationData.vibe}.</p>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                     {locationData.coworking?.map(space => (
@@ -162,9 +162,9 @@ const ProgrammaticLandingPage = () => {
                 </div>
 
                 <div>
-                  <h4 style={{ color: 'var(--text-white)', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <h3 style={{ color: 'var(--text-white)', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <Compass size={18} color="var(--primary-emerald)" /> Neighborhood Selection
-                  </h4>
+                  </h3>
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
                     {locationData.neighborhoods?.map(hood => (
                       <div key={hood} style={{ fontSize: '0.85rem', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
@@ -176,9 +176,9 @@ const ProgrammaticLandingPage = () => {
                 </div>
 
                 <div>
-                  <h4 style={{ color: 'var(--text-white)', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <h3 style={{ color: 'var(--text-white)', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <Shield size={18} color="var(--primary-emerald)" /> Logistics & Safety Setup
-                  </h4>
+                  </h3>
                   <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                     {locationData.logistics?.map((item, i) => (
                       <li key={i} style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '0.5rem', display: 'flex', gap: '0.5rem' }}>

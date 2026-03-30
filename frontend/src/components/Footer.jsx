@@ -40,7 +40,7 @@ const Footer = () => {
         
         {/* Column 2: Company */}
         <div style={{ textAlign: 'left' }}>
-          <h4 style={{ marginBottom: '1.5rem', color: 'var(--text-white)', fontSize: '1rem' }}>Company</h4>
+          <h3 style={{ marginBottom: '1.5rem', color: 'var(--text-white)', fontSize: '1rem' }}>Company</h3>
           <ul style={{ listStyle: 'none', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
             <li style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <Building size={14} color="var(--primary-emerald)" />
@@ -63,7 +63,7 @@ const Footer = () => {
 
         {/* Column 3: Resources */}
         <div style={{ textAlign: 'left' }}>
-          <h4 style={{ marginBottom: '1.5rem', color: 'var(--text-white)', fontSize: '1rem' }}>Resources</h4>
+          <h3 style={{ marginBottom: '1.5rem', color: 'var(--text-white)', fontSize: '1rem' }}>Resources</h3>
           <ul style={{ listStyle: 'none', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
             <li style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <MapPin size={14} color="var(--accent-gold)" />
@@ -82,7 +82,7 @@ const Footer = () => {
 
         {/* Column 4: Essential Guides */}
         <div style={{ textAlign: 'left' }}>
-          <h4 style={{ marginBottom: '1.5rem', color: 'var(--text-white)', fontSize: '1rem' }}>Essential Guides</h4>
+          <h3 style={{ marginBottom: '1.5rem', color: 'var(--text-white)', fontSize: '1rem' }}>Essential Guides</h3>
           <ul style={{ listStyle: 'none', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
             <li style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <CreditCard size={14} color="var(--accent-gold)" />
@@ -105,7 +105,7 @@ const Footer = () => {
 
         {/* Column 5: Popular Guides */}
         <div style={{ textAlign: 'left' }}>
-          <h4 style={{ marginBottom: '1.5rem', color: 'var(--text-white)', fontSize: '1rem' }}>Popular Guides</h4>
+          <h3 style={{ marginBottom: '1.5rem', color: 'var(--text-white)', fontSize: '1rem' }}>Popular Guides</h3>
           <ul style={{ listStyle: 'none', color: 'var(--text-muted)', fontSize: '0.9rem' }}>
             <li style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <Globe size={14} color="var(--primary-emerald)" />

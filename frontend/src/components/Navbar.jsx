@@ -170,7 +170,7 @@ const Navbar = () => {
                   <div style={{ width: '64px', height: '64px', borderRadius: '50%', background: 'rgba(16, 185, 129, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem' }}>
                     <ShieldCheck size={32} color="var(--primary-emerald)" />
                   </div>
-                  <h4 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>Request Received</h4>
+                  <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>Request Received</h3>
                   <p style={{ color: 'var(--text-muted)' }}>Our team will review your requirements and email you a precise quote shortly.</p>
                 </motion.div>
               ) : (

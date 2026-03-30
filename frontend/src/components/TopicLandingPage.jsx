@@ -181,21 +181,21 @@ const TopicLandingPage = () => {
                 <div style={{ display: 'flex', gap: '1.5rem' }}>
                   <div style={{ color: 'var(--primary-emerald)' }}><CheckCircle size={24} /></div>
                   <div>
-                    <h4 style={{ color: 'var(--text-white)', marginBottom: '0.5rem' }}>Verified Accuracy</h4>
+                    <h3 style={{ color: 'var(--text-white)', marginBottom: '0.5rem' }}>Verified Accuracy</h3>
                     <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Updated weekly against official Kenya Gazette and Immigration notices.</p>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: '1.5rem' }}>
                   <div style={{ color: 'var(--primary-emerald)' }}><CheckCircle size={24} /></div>
                   <div>
-                    <h4 style={{ color: 'var(--text-white)', marginBottom: '0.5rem' }}>Entity Relationship</h4>
+                    <h3 style={{ color: 'var(--text-white)', marginBottom: '0.5rem' }}>Entity Relationship</h3>
                     <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Cross-referenced with KRA (Tax) and Central Bank of Kenya (Logistics).</p>
                   </div>
                 </div>
                 <div style={{ display: 'flex', gap: '1.5rem' }}>
                   <div style={{ color: 'var(--primary-emerald)' }}><CheckCircle size={24} /></div>
                   <div>
-                    <h4 style={{ color: 'var(--text-white)', marginBottom: '0.5rem' }}>Legal Standing</h4>
+                    <h3 style={{ color: 'var(--text-white)', marginBottom: '0.5rem' }}>Legal Standing</h3>
                     <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Focus on Class N (Work from home) and Class G (Investment) compliance.</p>
                   </div>
                 </div>
@@ -232,9 +232,9 @@ const TopicLandingPage = () => {
             <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               {topicData.faqs.map((faq, i) => (
                 <div key={i} className="glass-card" style={{ padding: '2rem' }}>
-                  <h4 style={{ color: 'var(--primary-emerald)', marginBottom: '1rem', fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                  <h3 style={{ color: 'var(--primary-emerald)', marginBottom: '1rem', fontSize: '1.2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                     <HelpCircle size={20} /> {faq.q}
-                  </h4>
+                  </h3>
                   <p style={{ color: 'var(--text-muted)', lineHeight: '1.7' }}>{faq.a}</p>
                 </div>
               ))}
@@ -280,7 +280,7 @@ const TopicLandingPage = () => {
                 className="glass-card hover-card" 
                 style={{ padding: '2rem', textDecoration: 'none' }}
               >
-                <h4 style={{ color: 'var(--text-white)', marginBottom: '0.5rem' }}>{loc.name}</h4>
+                <h3 style={{ color: 'var(--text-white)', marginBottom: '0.5rem' }}>{loc.name}</h3>
                 <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{loc.vibe}</p>
               </Link>
             ))}

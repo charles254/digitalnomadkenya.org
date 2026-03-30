@@ -239,7 +239,7 @@ const Pricing = () => {
                   <div style={{ width: '64px', height: '64px', borderRadius: '50%', background: 'rgba(16, 185, 129, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem' }}>
                     <Check size={32} color="var(--primary-emerald)" />
                   </div>
-                  <h4 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>Application Received</h4>
+                  <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>Application Received</h3>
                   <p style={{ color: 'var(--text-muted)' }}>Our concierge agent will contact you via WhatsApp within 2 hours.</p>
                 </motion.div>
               ) : (

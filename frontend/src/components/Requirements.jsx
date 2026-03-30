@@ -65,7 +65,7 @@ const Requirements = () => {
                 {req.icon}
               </div>
               <div>
-                <h4 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', fontFamily: 'Outfit, sans-serif' }}>{req.title}</h4>
+                <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', fontFamily: 'Outfit, sans-serif' }}>{req.title}</h3>
                 <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: '1.5' }}>{req.desc}</p>
               </div>
             </motion.div>

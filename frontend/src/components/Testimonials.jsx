@@ -68,7 +68,7 @@ const Testimonials = () => {
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
               <img src={t.image} alt={`${t.name} - Digital Nomad Kenya testimonial`} loading="lazy" style={{ width: '50px', height: '50px', borderRadius: '50%', border: '2px solid var(--primary-emerald)' }} />
               <div>
-                <h4 style={{ margin: 0, fontSize: '1.05rem' }}>{t.name}</h4>
+                <h3 style={{ margin: 0, fontSize: '1.05rem' }}>{t.name}</h3>
                 <div style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>{t.role}</div>
               </div>
             </div>

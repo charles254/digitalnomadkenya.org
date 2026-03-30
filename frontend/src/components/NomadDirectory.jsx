@@ -279,7 +279,7 @@ const NomadDirectory = () => {
                 </div>
                 <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', lineHeight: 1.7 }}>{loc.vibe}. {loc.highlights}</p>
                 
-                <h4 style={{ fontSize: '0.9rem', color: 'var(--primary-emerald)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '1.5rem' }}>Passport-Specific Nuances:</h4>
+                <h3 style={{ fontSize: '0.9rem', color: 'var(--primary-emerald)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '1.5rem' }}>Passport-Specific Nuances:</h3>
                 <div style={{ 
                   display: 'grid', 
                   gridTemplateColumns: featuredLocation ? 'repeat(auto-fill, minmax(220px, 1fr))' : '1fr 1fr', 
@@ -324,7 +324,7 @@ const NomadDirectory = () => {
                             <div style={{ display: 'flex', gap: '1rem' }}>
                                 <HelpCircle color="var(--accent-gold)" size={24} style={{ flexShrink: 0 }} />
                                 <div>
-                                    <h4 style={{ fontSize: '1.1rem', marginBottom: '0.75rem' }}>{faq.q}</h4>
+                                    <h3 style={{ fontSize: '1.1rem', marginBottom: '0.75rem' }}>{faq.q}</h3>
                                     <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6 }}>{faq.a}</p>
                                 </div>
                             </div>
