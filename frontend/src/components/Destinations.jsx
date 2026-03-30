@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { m, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import MapPin from 'lucide-react/dist/esm/icons/map-pin'
 import Wifi from 'lucide-react/dist/esm/icons/wifi'
@@ -145,7 +145,7 @@ const Destinations = () => {
       <div className="grid-2">
         <AnimatePresence>
           {destinations.slice(0, visibleCount).map((dest, idx) => (
-            <motion.div 
+            <m.div 
               key={dest.id}
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -185,7 +185,7 @@ const Destinations = () => {
                   View American Nomad Guide <ArrowUpRight size={14} />
                 </Link>
               </div>
-            </motion.div>
+            </m.div>
           ))}
         </AnimatePresence>
       </div>

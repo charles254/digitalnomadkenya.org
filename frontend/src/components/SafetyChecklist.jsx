@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import Shield from 'lucide-react/dist/esm/icons/shield'
 import Phone from 'lucide-react/dist/esm/icons/phone'
 import MapPin from 'lucide-react/dist/esm/icons/map-pin'

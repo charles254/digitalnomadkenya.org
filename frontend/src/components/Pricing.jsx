@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
+import { m, AnimatePresence } from 'framer-motion'
 import Check from 'lucide-react/dist/esm/icons/check'
 import Star from 'lucide-react/dist/esm/icons/star'
 import Zap from 'lucide-react/dist/esm/icons/zap'
@@ -69,7 +69,7 @@ const Pricing = () => {
 
       <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem' }}>
         {cards.map((card, idx) => (
-          <motion.div 
+          <m.div 
             key={idx}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +91,7 @@ const Pricing = () => {
             }}
           >
             {card.popular && (
-              <motion.div 
+              <m.div 
                 initial={{ opacity: 0, scale: 0.8, x: '-50%' }}
                 animate={{ opacity: 1, scale: 1, x: '-50%' }}
                 style={{ 
@@ -110,10 +110,10 @@ const Pricing = () => {
                 }}
               >
                 RECOMMENDED
-              </motion.div>
+              </m.div>
             )}
             
-            <motion.div 
+            <m.div 
               style={{ 
                 width: '70px', 
                 height: '70px', 
@@ -128,7 +128,7 @@ const Pricing = () => {
               whileHover={{ rotate: [0, -10, 10, 0], transition: { duration: 0.5 } }}
             >
               {card.icon}
-            </motion.div>
+            </m.div>
 
             <h3 style={{ fontSize: '2rem', marginBottom: '1rem', fontWeight: 800, letterSpacing: '-0.03em' }}>{card.title}</h3>
             
@@ -139,7 +139,7 @@ const Pricing = () => {
             
             <ul style={{ listStyle: 'none', marginBottom: '3.5rem', flex: 1 }}>
               {card.features.map((f, i) => (
-                <motion.li 
+                <m.li 
                   key={i} 
                   initial={{ opacity: 0, x: -10 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -166,11 +166,11 @@ const Pricing = () => {
                     <Check size={14} color="var(--primary-emerald)" strokeWidth={4} />
                   </div>
                   {f}
-                </motion.li>
+                </m.li>
               ))}
             </ul>
 
-            <motion.div 
+            <m.div 
               className="magnetic-wrap"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -198,21 +198,21 @@ const Pricing = () => {
               >
                 {card.button}
               </button>
-            </motion.div>
-          </motion.div>
+            </m.div>
+          </m.div>
         ))}
       </div>
 
       <AnimatePresence>
         {showModal && (
-          <motion.div 
+          <m.div 
             className="modal-overlay"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setShowModal(false)}
           >
-            <motion.div 
+            <m.div 
               className="glass-card modal-content"
               style={{ padding: '3rem 2rem' }}
               initial={{ scale: 0.9, y: 20, opacity: 0 }}
@@ -231,7 +231,7 @@ const Pricing = () => {
               </div>
 
               {submitted ? (
-                <motion.div 
+                <m.div 
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   style={{ textAlign: 'center', padding: '2rem 0' }}
@@ -241,7 +241,7 @@ const Pricing = () => {
                   </div>
                   <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>Application Received</h3>
                   <p style={{ color: 'var(--text-muted)' }}>Our concierge agent will contact you via WhatsApp within 2 hours.</p>
-                </motion.div>
+                </m.div>
               ) : (
                 <form onSubmit={handleVipSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                   <input 
@@ -280,8 +280,8 @@ const Pricing = () => {
                   </button>
                 </form>
               )}
-            </motion.div>
-          </motion.div>
+            </m.div>
+          </m.div>
         )}
       </AnimatePresence>
     </section>

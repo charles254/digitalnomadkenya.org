@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import CheckCircle2 from 'lucide-react/dist/esm/icons/check-circle-2'
 import FileText from 'lucide-react/dist/esm/icons/file-text'
 import Globe from 'lucide-react/dist/esm/icons/globe'
@@ -52,7 +52,7 @@ const Roadmap = () => {
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
         {steps.map((step, idx) => (
-          <motion.div 
+          <m.div 
             key={idx}
             style={{ 
               display: 'flex', 
@@ -94,7 +94,7 @@ const Roadmap = () => {
                 <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: 1.6 }}>{step.desc}</p>
               </div>
             </div>
-          </motion.div>
+          </m.div>
         ))}
       </div>
     </div>

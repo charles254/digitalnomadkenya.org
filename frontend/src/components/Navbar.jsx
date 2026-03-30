@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
+import { m, AnimatePresence } from 'framer-motion'
 import Compass from 'lucide-react/dist/esm/icons/compass'
 import ShieldCheck from 'lucide-react/dist/esm/icons/shield-check'
 import CreditCard from 'lucide-react/dist/esm/icons/credit-card'
@@ -46,7 +46,7 @@ const Navbar = () => {
 
   return (
     <>
-      <motion.nav 
+      <m.nav 
         className={`navbar ${scrolled ? 'nav-scrolled' : ''}`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -131,11 +131,11 @@ const Navbar = () => {
         </div>
 
       </div>
-    </motion.nav>
+    </m.nav>
 
     <AnimatePresence>
         {showQuoteModal && (
-          <motion.div 
+          <m.div 
             className="modal-overlay"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -143,7 +143,7 @@ const Navbar = () => {
             onClick={() => setShowQuoteModal(false)}
             style={{ zIndex: 9999 }}
           >
-            <motion.div 
+            <m.div 
               className="glass-card modal-content"
               style={{ padding: '3rem 2rem', width: '90%', maxWidth: '600px' }}
               initial={{ scale: 0.9, y: 20, opacity: 0 }}
@@ -162,7 +162,7 @@ const Navbar = () => {
               </div>
 
               {submitted ? (
-                <motion.div 
+                <m.div 
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   style={{ textAlign: 'center', padding: '2rem 0' }}
@@ -172,7 +172,7 @@ const Navbar = () => {
                   </div>
                   <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>Request Received</h3>
                   <p style={{ color: 'var(--text-muted)' }}>Our team will review your requirements and email you a precise quote shortly.</p>
-                </motion.div>
+                </m.div>
               ) : (
                 <form onSubmit={handleQuoteSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                   <input 
@@ -232,8 +232,8 @@ const Navbar = () => {
                   </button>
                 </form>
               )}
-            </motion.div>
-          </motion.div>
+            </m.div>
+          </m.div>
         )}
       </AnimatePresence>
     </>

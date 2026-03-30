@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 const getAxios = () => import('axios').then(m => m.default)
-import { motion, AnimatePresence } from 'framer-motion'
+import { m, AnimatePresence } from 'framer-motion'
 import Loader2 from 'lucide-react/dist/esm/icons/loader-2'
 import CheckCircle2 from 'lucide-react/dist/esm/icons/check-circle-2'
 import AlertTriangle from 'lucide-react/dist/esm/icons/alert-triangle'
@@ -80,7 +80,7 @@ const Simulator = () => {
     switch(step) {
       case 1:
         return (
-          <motion.div 
+          <m.div 
             key="step1"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -123,11 +123,11 @@ const Simulator = () => {
             >
               Continue <ChevronRight size={20} />
             </button>
-          </motion.div>
+          </m.div>
         )
       case 2:
         return (
-          <motion.div 
+          <m.div 
             key="step2"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -206,11 +206,11 @@ const Simulator = () => {
                 Continue to Audit
               </button>
             </div>
-          </motion.div>
+          </m.div>
         )
       case 3:
         return (
-          <motion.div 
+          <m.div 
             key="step3"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -262,11 +262,11 @@ const Simulator = () => {
                 </button>
               </div>
             </form>
-          </motion.div>
+          </m.div>
         )
       case 4:
         return (
-          <motion.div 
+          <m.div 
             key="step4"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -293,11 +293,11 @@ const Simulator = () => {
                 <span>Detecting Official Bank Stamps</span>
               </div>
             </div>
-          </motion.div>
+          </m.div>
         )
       case 5:
         return (
-          <motion.div 
+          <m.div 
             key="step5"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -337,7 +337,7 @@ const Simulator = () => {
                 )}
               </>
             )}
-          </motion.div>
+          </m.div>
         )
       default:
         return null

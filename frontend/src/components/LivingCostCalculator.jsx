@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import Home from 'lucide-react/dist/esm/icons/home'
 import Utensils from 'lucide-react/dist/esm/icons/utensils'
 import Car from 'lucide-react/dist/esm/icons/car'

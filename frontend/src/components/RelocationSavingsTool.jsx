@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import TrendingDown from 'lucide-react/dist/esm/icons/trending-down'
 import Users from 'lucide-react/dist/esm/icons/users'
 import Wallet from 'lucide-react/dist/esm/icons/wallet'

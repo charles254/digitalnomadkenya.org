@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
+import { m, AnimatePresence } from 'framer-motion'
 import ShieldAlert from 'lucide-react/dist/esm/icons/shield-alert'
 import DollarSign from 'lucide-react/dist/esm/icons/dollar-sign'
 import Calendar from 'lucide-react/dist/esm/icons/calendar'

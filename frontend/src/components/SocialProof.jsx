@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { m, AnimatePresence } from 'framer-motion'
 import BadgeCheck from 'lucide-react/dist/esm/icons/badge-check'
 import X from 'lucide-react/dist/esm/icons/x'
 
@@ -49,7 +49,7 @@ const SocialProof = () => {
   return (
     <AnimatePresence>
       {isVisible && currentNotification && (
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 50, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 20, scale: 0.9 }}
@@ -71,7 +71,7 @@ const SocialProof = () => {
           <button className="social-proof-close" onClick={() => setIsVisible(false)}>
             <X size={14} />
           </button>
-        </motion.div>
+        </m.div>
       )}
     </AnimatePresence>
   )

@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import UploadCloud from 'lucide-react/dist/esm/icons/upload-cloud'
 import FileSearch from 'lucide-react/dist/esm/icons/file-search'
 import Send from 'lucide-react/dist/esm/icons/send'
@@ -39,7 +39,7 @@ const HowItWorks = () => {
           <div style={{ position: 'absolute', left: '32px', top: '0', bottom: '0', width: '2px', background: 'var(--border-glass)' }} className="timeline-line"></div>
 
           {steps.map((step, idx) => (
-            <motion.div 
+            <m.div 
               key={idx}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -57,7 +57,7 @@ const HowItWorks = () => {
                 <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>{step.title}</h3>
                 <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', lineHeight: '1.6' }}>{step.desc}</p>
               </div>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import Quote from 'lucide-react/dist/esm/icons/quote'
 
 const testimonials = [
@@ -53,7 +53,7 @@ const Testimonials = () => {
 
       <div className="grid-3">
         {testimonials.map((t, idx) => (
-          <motion.div 
+          <m.div 
             key={idx}
             className="testimonial-card glass-card"
             initial={{ opacity: 0, scale: 0.95 }}
@@ -72,7 +72,7 @@ const Testimonials = () => {
                 <div style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>{t.role}</div>
               </div>
             </div>
-          </motion.div>
+          </m.div>
         ))}
       </div>
     </section>

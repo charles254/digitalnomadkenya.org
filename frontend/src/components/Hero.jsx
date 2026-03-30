@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import Sparkles from 'lucide-react/dist/esm/icons/sparkles'
 import ArrowRight from 'lucide-react/dist/esm/icons/arrow-right'
 
@@ -19,7 +19,7 @@ const Hero = ({ onStart }) => {
         pointerEvents: 'none'
       }}></div>
 
-      <motion.div
+      <m.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: [0.23, 1, 0.32, 1] }}
@@ -38,9 +38,9 @@ const Hero = ({ onStart }) => {
       >
         <Sparkles size={16} className="pulse-icon" /> 
         Verified for 2026 Immigration Act
-      </motion.div>
+      </m.div>
 
-      <motion.h1 
+      <m.h1 
         className="hero-title"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -61,9 +61,9 @@ const Hero = ({ onStart }) => {
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent'
         }}>Automated in Seconds.</span>
-      </motion.h1>
+      </m.h1>
 
-      <motion.p 
+      <m.p 
         className="hero-subtitle"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -78,14 +78,14 @@ const Hero = ({ onStart }) => {
       >
         Digital Nomad Kenya transforms the complex Class N permit into a seamless digital journey. 
         Verify your eligibility in seconds and get your secure application dossier.
-      </motion.p>
+      </m.p>
 
-      <motion.div
+      <m.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.6, duration: 0.8, type: 'spring', stiffness: 100 }}
       >
-        <motion.div className="magnetic-wrap" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+        <m.div className="magnetic-wrap" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <button 
             className="btn-primary" 
             onClick={onStart}
@@ -98,8 +98,8 @@ const Hero = ({ onStart }) => {
           >
             Start Free Audit Simulator <ArrowRight size={22} />
           </button>
-        </motion.div>
-      </motion.div>
+        </m.div>
+      </m.div>
     </header>
   )
 }

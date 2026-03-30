@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import Users from 'lucide-react/dist/esm/icons/users'
 import TrendingUp from 'lucide-react/dist/esm/icons/trending-up'
 import Activity from 'lucide-react/dist/esm/icons/activity'
@@ -66,7 +66,7 @@ const PartnerDashboard = () => {
       </nav>
 
       <div className="container" style={{ paddingTop: '3rem', paddingBottom: '4rem' }}>
-        <motion.div 
+        <m.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="glass-card"
@@ -84,7 +84,7 @@ const PartnerDashboard = () => {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem', marginBottom: '4rem' }}>
             {stats.map((stat, idx) => (
-              <motion.div 
+              <m.div 
                 key={idx}
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -102,7 +102,7 @@ const PartnerDashboard = () => {
                   <div style={{ fontSize: '2.5rem', fontWeight: '800', fontFamily: 'Outfit', color: 'var(--text-white)', lineHeight: 1 }}>{stat.value}</div>
                   <div style={{ color: 'var(--text-muted)', fontSize: '0.85rem', marginTop: '0.5rem' }}>{stat.trend}</div>
                 </div>
-              </motion.div>
+              </m.div>
             ))}
           </div>
 
@@ -120,7 +120,7 @@ const PartnerDashboard = () => {
               </thead>
               <tbody>
                 {leads.map((lead, idx) => (
-                  <motion.tr 
+                  <m.tr 
                     key={idx}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -145,12 +145,12 @@ const PartnerDashboard = () => {
                         {lead.status}
                       </span>
                     </td>
-                  </motion.tr>
+                  </m.tr>
                 ))}
               </tbody>
             </table>
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </div>
   )

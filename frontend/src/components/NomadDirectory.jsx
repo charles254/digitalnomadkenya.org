@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import Navbar from './Navbar'
 import Breadcrumbs from './Breadcrumbs'
 import Footer from './Footer'
@@ -174,13 +174,13 @@ const NomadDirectory = () => {
         
         {/* Hub Hero */}
         <header style={{ textAlign: 'center', marginBottom: '6rem' }}>
-          <motion.div 
+          <m.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="premium-badge"
           >
             <Scale size={16} /> Official 2026 Kenya Legal & Immigration Guide
-          </motion.div>
+          </m.div>
           {locId && (
              <Link to="/immigration-guide" style={{ color: 'var(--primary-emerald)', textDecoration: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginTop: '1rem', fontSize: '0.9rem' }}>
                 <ChevronLeft size={16} /> Back to Legal Guide

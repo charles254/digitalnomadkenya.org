@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import BrainCircuit from 'lucide-react/dist/esm/icons/brain-circuit'
 import ShieldAlert from 'lucide-react/dist/esm/icons/shield-alert'
 import WifiHigh from 'lucide-react/dist/esm/icons/wifi-high'
@@ -52,7 +52,7 @@ const Features = () => {
 
       <div className="grid-features">
         {features.map((feat, idx) => (
-          <motion.div 
+          <m.div 
             key={idx}
             className="feature-card glass-card"
             initial={{ opacity: 0, y: 30 }}
@@ -65,7 +65,7 @@ const Features = () => {
             </div>
             <h3 style={{ fontSize: '1.25rem', marginBottom: '0.75rem', marginTop: '1.5rem' }}>{feat.title}</h3>
             <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>{feat.desc}</p>
-          </motion.div>
+          </m.div>
         ))}
       </div>
     </section>

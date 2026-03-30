@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 const getAxios = () => import('axios').then(m => m.default)
-import { motion, AnimatePresence } from 'framer-motion'
+import { m, AnimatePresence } from 'framer-motion'
 import Loader2 from 'lucide-react/dist/esm/icons/loader-2'
 import CheckCircle2 from 'lucide-react/dist/esm/icons/check-circle-2'
 import AlertTriangle from 'lucide-react/dist/esm/icons/alert-triangle'
@@ -103,7 +103,7 @@ const AuditSimulatorPage = () => {
       // ... steps 1-4 remain similar in logic, just ensuring they look premium
       case 1:
         return (
-          <motion.div 
+          <m.div 
             key="step1"
             initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}
             className="step-content"
@@ -131,11 +131,11 @@ const AuditSimulatorPage = () => {
             <button className="btn-primary" style={{ width: '100%', marginTop: '1rem' }} onClick={handleNext} disabled={!formData.name}>
               Verify My Income <ChevronRight size={20} />
             </button>
-          </motion.div>
+          </m.div>
         )
       case 2:
         return (
-          <motion.div 
+          <m.div 
             key="step2"
             initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}
             className="step-content"
@@ -183,11 +183,11 @@ const AuditSimulatorPage = () => {
                 Final Verification
               </button>
             </div>
-          </motion.div>
+          </m.div>
         )
       case 3:
         return (
-          <motion.div 
+          <m.div 
             key="step3"
             initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}
             className="step-content"
@@ -228,11 +228,11 @@ const AuditSimulatorPage = () => {
                 Generate Secure Report
               </button>
             </div>
-          </motion.div>
+          </m.div>
         )
       case 4:
         return (
-          <motion.div 
+          <m.div 
             key="step4" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}
             className="step-content" style={{ textAlign: 'center', padding: '3rem 0' }}
           >
@@ -252,11 +252,11 @@ const AuditSimulatorPage = () => {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </m.div>
         )
       case 5:
         return (
-          <motion.div 
+          <m.div 
             key="step5" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }}
             className="step-content" style={{ textAlign: 'center' }}
           >
@@ -266,12 +266,12 @@ const AuditSimulatorPage = () => {
                   {result.status === 'Success' ? (
                     <div style={{ position: 'relative', display: 'inline-block' }}>
                       <FileText size={80} color="var(--primary-emerald)" />
-                      <motion.div 
+                      <m.div 
                         initial={{ scale: 0 }} animate={{ scale: 1 }}
                         style={{ position: 'absolute', bottom: -10, right: -10, background: 'var(--accent-gold)', borderRadius: '50%', padding: '5px' }}
                       >
                         <CheckCircle2 size={24} color="var(--bg-dark)" />
-                      </motion.div>
+                      </m.div>
                     </div>
                   ) : <AlertTriangle size={80} color="#ef4444" />}
                 </div>
@@ -302,7 +302,7 @@ const AuditSimulatorPage = () => {
                 )}
               </>
             )}
-          </motion.div>
+          </m.div>
         )
       default:
         return null

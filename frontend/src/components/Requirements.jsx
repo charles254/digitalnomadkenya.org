@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import CheckCircle2 from 'lucide-react/dist/esm/icons/check-circle-2'
 import ShieldAlert from 'lucide-react/dist/esm/icons/shield-alert'
 import BadgeDollarSign from 'lucide-react/dist/esm/icons/badge-dollar-sign'
@@ -53,7 +53,7 @@ const Requirements = () => {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
           {reqs.map((req, idx) => (
-            <motion.div 
+            <m.div 
               key={idx}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -68,7 +68,7 @@ const Requirements = () => {
                 <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', fontFamily: 'Outfit, sans-serif' }}>{req.title}</h3>
                 <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: '1.5' }}>{req.desc}</p>
               </div>
-            </motion.div>
+            </m.div>
           ))}
         </div>
         

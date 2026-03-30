@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import Wifi from 'lucide-react/dist/esm/icons/wifi'
 import Video from 'lucide-react/dist/esm/icons/video'
 import Zap from 'lucide-react/dist/esm/icons/zap'
