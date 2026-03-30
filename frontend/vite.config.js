@@ -13,4 +13,15 @@ export default defineConfig({
       },
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('lucide-react')) return 'lucide'
+          if (id.includes('framer-motion')) return 'framer'
+          if (id.includes('react-router')) return 'router'
+        },
+      },
+    },
+  },
 })
