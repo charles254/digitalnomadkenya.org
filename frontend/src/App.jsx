@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate, useParams } from 'react-router-
 
 const LandingPage = lazy(() => import('./components/LandingPage'))
 const PartnerDashboard = lazy(() => import('./components/PartnerDashboard'))
-const ProgrammaticLandingPage = lazy(() => import('./components/ProgrammaticLandingPage'))
+// ProgrammaticLandingPage removed — content consolidated into NomadDirectory location pages
 const NomadDirectory = lazy(() => import('./components/NomadDirectory'))
 const TopicLandingPage = lazy(() => import('./components/TopicLandingPage'))
 const AuditSimulatorPage = lazy(() => import('./components/AuditSimulatorPage'))
@@ -18,9 +18,16 @@ const NomadRedirect = () => {
   return <Navigate to={`/immigration-guide/${location}`} replace />
 }
 
+// Redirect old nationality pages to consolidated location pages
+const NationalityRedirect = () => {
+  const { location, nationality } = useParams()
+  return <Navigate to={`/immigration-guide/${location}#${nationality}`} replace />
+}
+
+// Legacy /nomad/ nationality redirect
 const NomadNatRedirect = () => {
   const { location, nationality } = useParams()
-  return <Navigate to={`/immigration-guide/${location}/${nationality}`} replace />
+  return <Navigate to={`/immigration-guide/${location}#${nationality}`} replace />
 }
 
 function App() {
@@ -39,7 +46,7 @@ function App() {
         <Route path="/partner" element={<PartnerDashboard />} />
         <Route path="/immigration-guide" element={<NomadDirectory />} />
         <Route path="/immigration-guide/:location" element={<NomadDirectory />} />
-        <Route path="/immigration-guide/:location/:nationality" element={<ProgrammaticLandingPage />} />
+        <Route path="/immigration-guide/:location/:nationality" element={<NationalityRedirect />} />
         
         {/* Legacy Redirects */}
         <Route path="/nomad" element={<Navigate to="/immigration-guide" replace />} />
