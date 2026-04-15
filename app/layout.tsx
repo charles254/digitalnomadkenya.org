@@ -78,7 +78,7 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "Digital Nomad Kenya",
-            alternateName: ["DNK", "VizaBot Kenya"],
+            alternateName: ["DNK", "Digital Nomad KE"],
             url: BASE_URL,
           }}
         />

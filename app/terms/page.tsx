@@ -20,7 +20,7 @@ export default function TermsPage() {
       <h2>Refunds</h2>
       <p>Dossier Packs are non-refundable once generated. VIP Fixer services may be refunded within 48 hours of booking if the service has not commenced.</p>
       <h2>Contact</h2>
-      <p>For terms inquiries: audit@vizabot.ke</p>
+      <p>For terms inquiries: info@digitalnomadkenya.org</p>
     </div>
   );
 }

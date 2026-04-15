@@ -20,7 +20,7 @@ export default function PrivacyPage() {
       <h2>Cookies</h2>
       <p>We use Google Analytics to understand site usage. You can opt out using browser privacy settings.</p>
       <h2>Contact</h2>
-      <p>For privacy inquiries: audit@vizabot.ke</p>
+      <p>For privacy inquiries: info@digitalnomadkenya.org</p>
     </div>
   );
 }
