@@ -1,0 +1,407 @@
+{
+  "nationalities": [
+    {
+      "id": "american", "name": "American", "plural": "Americans", "country": "USA",
+      "legal_gotcha": "Americans must provide a certified IRS tax transcript for the last 2 years. FBI background checks are preferred over local police clearance for Class N.",
+      "embassy": "United States Embassy Nairobi, United Nations Avenue, Gigiri",
+      "currency": "USD",
+      "exchange_tip": "No conversion needed — Kenya's Class N income threshold is denominated in USD. M-Pesa allows direct USD-to-KES transfers via Western Union.",
+      "tax_treaty": true,
+      "tax_treaty_details": "The US-Kenya Double Taxation Agreement (2024) exempts Class N holders from Kenyan income tax on foreign-sourced earnings, provided they maintain US tax residency.",
+      "direct_flights": ["New York (JFK) via Ethiopian Airlines", "Washington (IAD) via Qatar Airways", "Atlanta (ATL) via KLM Amsterdam"],
+      "avg_processing_weeks": 4,
+      "community_estimate": "3,200+ American expats in Kenya (2025 State Dept. estimate)",
+      "health_insurance_note": "US health insurance rarely covers Kenya. Purchase NHIF-compliant local cover or use Cigna Global/SafetyWing for nomad-specific policies.",
+      "document_checklist": ["Valid US Passport (12+ months validity)", "FBI Identity History Summary", "Certified IRS Tax Transcripts (2 years)", "Bank statements (6 months, stamped)", "Passport-size photos (white background)", "Cover letter stating intent", "Proof of remote employment/freelance contracts"],
+      "testimonial": { "name": "Jake R.", "location": "Kilimani", "quote": "The FBI check took 3 weeks — start early. Once I had my dossier from Digital Nomad Kenya, the e-Citizen submission was seamless." }
+    },
+    {
+      "id": "british", "name": "British", "plural": "Britons", "country": "UK",
+      "legal_gotcha": "UK citizens require an ACRO Police Certificate. Simple DBS checks are often rejected by the e-FNS portal.",
+      "embassy": "British High Commission Nairobi, Upper Hill Road",
+      "currency": "GBP",
+      "exchange_tip": "GBP to KES rates are favorable. Use Wise (TransferWise) for the best rates — avoid airport bureaux which charge 8-12% markup.",
+      "tax_treaty": true,
+      "tax_treaty_details": "The UK-Kenya DTA covers income tax, capital gains, and dividends. UK tax residents on Class N are exempt from Kenyan income tax on foreign earnings.",
+      "direct_flights": ["London Heathrow (LHR) direct via Kenya Airways (8h)", "London Heathrow (LHR) direct via British Airways (8h)"],
+      "avg_processing_weeks": 3,
+      "community_estimate": "8,500+ British nationals registered with the High Commission in Kenya",
+      "health_insurance_note": "NHS does not cover overseas stays. A GHIC card is useless in Kenya. Get SafetyWing or Cigna Global, or enroll in AAR Kenya for local cover.",
+      "document_checklist": ["Valid UK Passport (12+ months validity)", "ACRO Police Certificate (not DBS)", "HMRC tax statements (2 years)", "Bank statements (6 months, stamped by bank)", "Passport-size photos (white background)", "Cover letter stating intent", "Proof of remote employment contracts"],
+      "testimonial": { "name": "Sarah M.", "location": "Diani", "quote": "Getting the ACRO certificate was the hardest part — it took 5 weeks. Digital Nomad Kenya flagged that my DBS check would be rejected before I even submitted." }
+    },
+    {
+      "id": "german", "name": "German", "plural": "Germans", "country": "Germany",
+      "legal_gotcha": "German applicants must provide a certified translation of their employment contract if it is not in English.",
+      "embassy": "German Embassy Nairobi, Riverside Drive 113, Riverside",
+      "currency": "EUR",
+      "exchange_tip": "EUR converts well to KES. Use Wise or Revolut for transfers. German banks like N26 work seamlessly with M-Pesa via international transfer.",
+      "tax_treaty": true,
+      "tax_treaty_details": "Germany-Kenya DTA (1977, amended 2021) provides exemption on foreign-source employment income. Maintain your Finanzamt registration for compliance.",
+      "direct_flights": ["Frankfurt (FRA) direct via Condor (8.5h)", "Munich (MUC) via Ethiopian Airlines Addis Ababa"],
+      "avg_processing_weeks": 3,
+      "community_estimate": "2,800+ German nationals in Kenya (Auswartiges Amt registry)",
+      "health_insurance_note": "German Krankenkasse does not cover Kenya. Notify your provider of relocation. BDAE or ADAC Auslandsversicherung offer affordable nomad policies.",
+      "document_checklist": ["Valid Reisepass (12+ months validity)", "Fuhrungszeugnis (Polizeiliches Fuhrungszeugnis Belegart O)", "Certified English translation of employment contract", "Bank statements (6 months, beglaubigt)", "Passport-size photos (biometric, white background)", "Cover letter in English", "Proof of remote employment/freelance contracts"],
+      "testimonial": { "name": "Lukas W.", "location": "Nanyuki", "quote": "The certified translation requirement caught me off guard. Digital Nomad Kenya's checklist saved me weeks of back-and-forth with the embassy." }
+    },
+    {
+      "id": "french", "name": "French", "plural": "French", "country": "France",
+      "legal_gotcha": "Ensure your 'Casier Judiciaire' is the Bulletin No. 3 and has been issued within the last 6 months.",
+      "embassy": "French Embassy Nairobi, Barclays Plaza, 9th Floor, Loita Street",
+      "currency": "EUR",
+      "exchange_tip": "EUR to KES is straightforward. French digital banks (Boursorama, Fortuneo) support international transfers. Wise is recommended for recurring KES transfers.",
+      "tax_treaty": true,
+      "tax_treaty_details": "France-Kenya DTA exempts foreign-sourced employment income from Kenyan tax. Maintain your Centre des Impots declaration for French tax compliance.",
+      "direct_flights": ["Paris CDG direct via Kenya Airways (8.5h)", "Paris CDG via Ethiopian Airlines Addis Ababa"],
+      "avg_processing_weeks": 4,
+      "community_estimate": "1,900+ French nationals in Kenya (Consulat General registry)",
+      "health_insurance_note": "Securite Sociale coverage is limited abroad. Enroll in CFE (Caisse des Francais de l'Etranger) or get a private nomad policy like SafetyWing.",
+      "document_checklist": ["Valid Passeport (12+ months validity)", "Casier Judiciaire Bulletin No. 3 (within 6 months)", "Avis d'imposition (2 years)", "Bank statements (6 months, certified)", "Passport-size photos (white background)", "Cover letter in English", "Proof of remote employment/freelance contracts"],
+      "testimonial": { "name": "Amelie D.", "location": "Lamu", "quote": "I initially submitted a Bulletin No. 2 and it was rejected. The Digital Nomad Kenya audit caught this before submission — crucial detail." }
+    },
+    {
+      "id": "canadian", "name": "Canadian", "plural": "Canadians", "country": "Canada",
+      "legal_gotcha": "RCMP criminal record checks must be fingerprint-based to meet Kenya's security audit standards.",
+      "embassy": "Canadian High Commission Nairobi, Limuru Road, Gigiri",
+      "currency": "CAD",
+      "exchange_tip": "CAD to KES is best via Wise. Avoid Kenyan forex bureaux for large sums. RBC and TD Bank support direct SWIFT transfers to Kenyan accounts.",
+      "tax_treaty": true,
+      "tax_treaty_details": "Canada-Kenya Tax Convention covers income and capital gains. Canadian residents on Class N must still file CRA returns but can claim foreign tax credits.",
+      "direct_flights": ["Toronto (YYZ) via Ethiopian Airlines Addis Ababa", "Montreal (YUL) via KLM Amsterdam"],
+      "avg_processing_weeks": 4,
+      "community_estimate": "1,400+ Canadian nationals registered in Kenya",
+      "health_insurance_note": "Provincial health insurance (OHIP, MSP) does not cover Kenya. Purchase World Nomads or Allianz travel insurance with medical evacuation coverage.",
+      "document_checklist": ["Valid Canadian Passport (12+ months validity)", "RCMP Fingerprint-Based Criminal Record Check", "CRA Notice of Assessment (2 years)", "Bank statements (6 months, certified)", "Passport-size photos (white background)", "Cover letter stating intent", "Proof of remote employment/freelance contracts"],
+      "testimonial": { "name": "David L.", "location": "Kilimani", "quote": "The fingerprint-based RCMP check is essential — I almost submitted a name-based check that would have been rejected." }
+    },
+    {
+      "id": "australian", "name": "Australian", "plural": "Australians", "country": "Australia",
+      "legal_gotcha": "National Police Checks from the AFP are mandatory; state-level checks may cause delays.",
+      "embassy": "Australian High Commission Nairobi, ICIPE Complex, Kasarani",
+      "currency": "AUD",
+      "exchange_tip": "AUD to KES via Wise gives the best rates. ANZ and Commonwealth Bank support SWIFT transfers to Kenya. Factor in the time zone difference for transfer timing.",
+      "tax_treaty": false,
+      "tax_treaty_details": "Australia and Kenya do not have a DTA. Australian residents must declare worldwide income to the ATO and may be subject to double taxation without treaty relief.",
+      "direct_flights": ["Sydney (SYD) via Emirates Dubai (19h)", "Melbourne (MEL) via Qatar Airways Doha (18h)"],
+      "avg_processing_weeks": 5,
+      "community_estimate": "800+ Australian nationals in Kenya",
+      "health_insurance_note": "Medicare does not cover Kenya. Purchase Bupa Global, Medibank travel insurance, or SafetyWing. Medical evacuation cover is essential for coastal areas.",
+      "document_checklist": ["Valid Australian Passport (12+ months validity)", "AFP National Police Check (not state-level)", "ATO Tax Assessment Notices (2 years)", "Bank statements (6 months, certified)", "Passport-size photos (white background)", "Cover letter stating intent", "Proof of remote employment/freelance contracts"],
+      "testimonial": { "name": "Emma T.", "location": "Watamu", "quote": "No tax treaty means you need to plan carefully. Digital Nomad Kenya's dossier helped me present my ATO compliance clearly to the Kenyan authorities." }
+    },
+    {
+      "id": "dutch", "name": "Dutch", "plural": "Dutch", "country": "Netherlands",
+      "legal_gotcha": "A VOG (Verklaring Omtrent het Gedrag) is required and must specifically mention international relocation.",
+      "embassy": "Embassy of the Netherlands Nairobi, Riverside Lane, off Riverside Drive",
+      "currency": "EUR",
+      "exchange_tip": "EUR to KES via Wise or Bunq's international transfers. ING and ABN AMRO support SWIFT to Kenya. Dutch digital banks work well with M-Pesa.",
+      "tax_treaty": true,
+      "tax_treaty_details": "Netherlands-Kenya DTA (1976) covers income tax exemptions for foreign-sourced employment. Notify the Belastingdienst of your relocation status.",
+      "direct_flights": ["Amsterdam (AMS) direct via KLM (8.5h)", "Amsterdam (AMS) direct via Kenya Airways (8.5h)"],
+      "avg_processing_weeks": 3,
+      "community_estimate": "2,100+ Dutch nationals in Kenya (BZ registry)",
+      "health_insurance_note": "Dutch basisverzekering does not cover Kenya. You must report your move to your insurer. Get ONVZ Buitenland or a SafetyWing nomad plan.",
+      "document_checklist": ["Valid Nederlands Paspoort (12+ months validity)", "VOG (international relocation purpose specified)", "Belastingdienst tax returns (2 years)", "Bank statements (6 months, certified)", "Passport-size photos (white background)", "Cover letter in English", "Proof of remote employment/freelance contracts"],
+      "testimonial": { "name": "Bram V.", "location": "Diani", "quote": "The VOG must specifically mention international relocation — my first VOG was rejected because it only covered employment screening." }
+    },
+    {
+      "id": "swedish", "name": "Swedish", "plural": "Swedes", "country": "Sweden",
+      "legal_gotcha": "Extracts from the Swedish Police Register must be provided in English or with a certified translation.",
+      "embassy": "Embassy of Sweden Nairobi, Lion Place, Waiyaki Way, Westlands",
+      "currency": "SEK",
+      "exchange_tip": "SEK to KES is best via Wise. Handelsbanken and SEB support international transfers. Swish does not work in Kenya — switch to M-Pesa on arrival.",
+      "tax_treaty": true,
+      "tax_treaty_details": "Sweden-Kenya DTA covers income tax. Skatteverket must be notified of your relocation. Foreign-source income remains exempt from Kenyan tax under Class N.",
+      "direct_flights": ["Stockholm (ARN) via Ethiopian Airlines Addis Ababa", "Stockholm (ARN) via KLM Amsterdam"],
+      "avg_processing_weeks": 3,
+      "community_estimate": "600+ Swedish nationals in Kenya",
+      "health_insurance_note": "Forsakringskassan coverage is limited abroad after 1 year. Get ICA Forsakring reseforsakring or a SafetyWing nomad plan for Kenya.",
+      "document_checklist": ["Valid Svenskt Pass (12+ months validity)", "Swedish Police Register Extract (in English or certified translation)", "Skatteverket tax returns (2 years)", "Bank statements (6 months, certified)", "Passport-size photos (white background)", "Cover letter in English", "Proof of remote employment/freelance contracts"],
+      "testimonial": { "name": "Erik S.", "location": "Naivasha", "quote": "Getting the police register extract translated was straightforward — Digital Nomad Kenya recommended a certified agency that delivered in 3 days." }
+    },
+    {
+      "id": "spanish", "name": "Spanish", "plural": "Spanish", "country": "Spain",
+      "legal_gotcha": "Certificado de Antecedentes Penales is required. Kenya requires a Hague Apostille for Spanish legal documents.",
+      "embassy": "Embassy of Spain Nairobi, CBA Building, 6th Floor, Upper Hill",
+      "currency": "EUR",
+      "exchange_tip": "EUR to KES via Wise or N26 international transfers. Spanish banks (BBVA, Santander) charge high SWIFT fees — use fintech alternatives.",
+      "tax_treaty": false,
+      "tax_treaty_details": "Spain and Kenya do not have a DTA. Spanish residents must declare worldwide income to the Agencia Tributaria. Consult a fiscal advisor for Modelo 720 obligations.",
+      "direct_flights": ["Madrid (MAD) via Ethiopian Airlines Addis Ababa", "Barcelona (BCN) via Turkish Airlines Istanbul"],
+      "avg_processing_weeks": 5,
+      "community_estimate": "500+ Spanish nationals in Kenya",
+      "health_insurance_note": "Spanish Seguridad Social has limited overseas coverage. Apply for a Certificado Provisional Sustitutorio or purchase Sanitas Global / SafetyWing.",
+      "document_checklist": ["Valid Pasaporte (12+ months validity)", "Certificado de Antecedentes Penales with Hague Apostille", "Agencia Tributaria tax returns (2 years)", "Bank statements (6 months, certified)", "Passport-size photos (white background)", "Cover letter in English", "Proof of remote employment/freelance contracts"],
+      "testimonial": { "name": "Carlos M.", "location": "Diani", "quote": "The Hague Apostille requirement is not obvious — most guides miss this. Digital Nomad Kenya flagged it immediately in my audit." }
+    },
+    {
+      "id": "indian", "name": "Indian", "plural": "Indians", "country": "India",
+      "legal_gotcha": "PCC from the Regional Passport Office (RPO) is mandatory. Local station certificates are generally not accepted.",
+      "embassy": "High Commission of India Nairobi, Jeevan Bharati Building, 2nd Floor, Harambee Avenue",
+      "currency": "INR",
+      "exchange_tip": "INR to KES conversion requires an intermediary (USD/EUR). Use Wise for the best rates. RBI limits outward remittances under LRS to $250,000/year.",
+      "tax_treaty": true,
+      "tax_treaty_details": "India-Kenya DTAA (1985) covers income tax. NRI status under FEMA rules applies if you stay outside India for 182+ days. Consult a CA for TDS implications.",
+      "direct_flights": ["Mumbai (BOM) direct via Kenya Airways (5.5h)", "Delhi (DEL) via Ethiopian Airlines Addis Ababa"],
+      "avg_processing_weeks": 6,
+      "community_estimate": "80,000+ Indian-origin community in Kenya (including PIOs and NRIs)",
+      "health_insurance_note": "Indian health insurance (Star Health, ICICI Lombard) rarely covers Kenya. Purchase SafetyWing or HDFC ERGO travel insurance with Kenya coverage.",
+      "document_checklist": ["Valid Indian Passport (12+ months validity)", "PCC from Regional Passport Office (RPO)", "ITR-V acknowledgments (2 years)", "Bank statements (6 months, certified)", "Passport-size photos (white background)", "Cover letter in English", "Proof of remote employment/freelance contracts", "FEMA compliance declaration (if transferring over $250k)"],
+      "testimonial": { "name": "Priya K.", "location": "Kilimani", "quote": "The Indian community in Nairobi is huge and welcoming. Digital Nomad Kenya helped me navigate the RPO process which can take 4-6 weeks." }
+    },
+    {
+      "id": "southafrican", "name": "South African", "plural": "South Africans", "country": "South Africa",
+      "legal_gotcha": "Unabridged birth certificates and SAPS police clearance are high-priority requirements.",
+      "embassy": "South African High Commission Nairobi, Roshanmaer Place, Lenana Road",
+      "currency": "ZAR",
+      "exchange_tip": "ZAR to KES is straightforward at most Kenyan forex bureaux. FNB and Standard Bank have Kenya branches — makes banking easier. Use Wise for recurring transfers.",
+      "tax_treaty": true,
+      "tax_treaty_details": "SA-Kenya DTA covers income tax. SARS requires tax clearance for emigrants. Apply for a Tax Compliance Status (TCS) pin before departure.",
+      "direct_flights": ["Johannesburg (JNB) direct via Kenya Airways (4h)", "Cape Town (CPT) via Johannesburg (JNB)"],
+      "avg_processing_weeks": 3,
+      "community_estimate": "5,000+ South African nationals in Kenya",
+      "health_insurance_note": "Discovery Health has limited coverage in Kenya via their travel benefit. Purchase Momentum Global or SafetyWing for comprehensive Kenya cover.",
+      "document_checklist": ["Valid South African Passport (12+ months validity)", "SAPS Police Clearance Certificate", "Unabridged Birth Certificate", "SARS tax returns (2 years)", "Bank statements (6 months, certified)", "Passport-size photos (white background)", "Cover letter stating intent", "Proof of remote employment/freelance contracts"],
+      "testimonial": { "name": "Thabo N.", "location": "Kisumu", "quote": "The unabridged birth certificate requirement surprised me. It takes 6-8 weeks from Home Affairs — apply before you even start the visa process." }
+    },
+    {
+      "id": "italian", "name": "Italian", "plural": "Italians", "country": "Italy",
+      "legal_gotcha": "Certificato Penale and Certificato dei Carichi Pendenti must be translated by an accredited agency.",
+      "embassy": "Embassy of Italy Nairobi, International House, 9th Floor, Mama Ngina Street",
+      "currency": "EUR",
+      "exchange_tip": "EUR to KES via Wise or Revolut. Intesa Sanpaolo and UniCredit support SWIFT transfers to Kenya. PostePay Evolution also works for international transfers.",
+      "tax_treaty": true,
+      "tax_treaty_details": "Italy-Kenya DTA covers income and capital gains tax. Notify the Agenzia delle Entrate of your AIRE registration to maintain fiscal residency compliance.",
+      "direct_flights": ["Rome (FCO) via Ethiopian Airlines Addis Ababa", "Milan (MXP) via Turkish Airlines Istanbul"],
+      "avg_processing_weeks": 4,
+      "community_estimate": "3,500+ Italian nationals in Kenya (AIRE registry)",
+      "health_insurance_note": "SSN (Servizio Sanitario Nazionale) coverage ends after AIRE registration. Get Allianz Global or SafetyWing. Watamu has a strong Italian medical network.",
+      "document_checklist": ["Valid Passaporto (12+ months validity)", "Certificato Penale (certified English translation)", "Certificato dei Carichi Pendenti (certified English translation)", "Agenzia delle Entrate tax returns (2 years)", "Bank statements (6 months, certified)", "Passport-size photos (white background)", "Cover letter in English", "Proof of remote employment/freelance contracts"],
+      "testimonial": { "name": "Marco B.", "location": "Watamu", "quote": "Watamu has a huge Italian community — it felt like a second home. The translation requirement for both certificates is non-negotiable though." }
+    },
+    {
+      "id": "swiss", "name": "Swiss", "plural": "Swiss", "country": "Switzerland",
+      "legal_gotcha": "Swiss Federal Criminal Record extracts must be issued with an international multi-language format.",
+      "embassy": "Embassy of Switzerland Nairobi, General Mathenge Drive, Westlands",
+      "currency": "CHF",
+      "exchange_tip": "CHF to KES is best via Wise. Swiss banks (UBS, Credit Suisse) charge premium SWIFT fees. Revolut Switzerland or Neon offer cheaper alternatives.",
+      "tax_treaty": true,
+      "tax_treaty_details": "Switzerland-Kenya DTA covers income, capital gains, and dividends. Notify your cantonal Steueramt of relocation. Swiss tax obligations continue for 10 years on certain assets.",
+      "direct_flights": ["Zurich (ZRH) via Ethiopian Airlines Addis Ababa", "Geneva (GVA) via KLM Amsterdam"],
+      "avg_processing_weeks": 3,
+      "community_estimate": "1,200+ Swiss nationals in Kenya (EDA registry)",
+      "health_insurance_note": "Swiss Grundversicherung requires an international coverage rider. Contact your Krankenkasse about Auslandversicherung or switch to Cigna Global / SWICA International.",
+      "document_checklist": ["Valid Schweizer Pass (12+ months validity)", "Federal Criminal Record Extract (international multi-language format)", "Cantonal tax returns (2 years)", "Bank statements (6 months, certified)", "Passport-size photos (white background)", "Cover letter in English", "Proof of remote employment/freelance contracts"],
+      "testimonial": { "name": "Anna H.", "location": "Nanyuki", "quote": "The multi-language criminal record format is key — my first extract was only in German and was rejected. Digital Nomad Kenya's checklist prevented that." }
+    }
+  ],
+  "locations": [
+    { 
+      "id": "diani", 
+      "name": "Diani Beach", 
+      "region": "Coast",
+      "internet": "50Mbps Fiber", 
+      "vibe": "Tropical Coastal Paradise",
+      "rent": "$600 - $1,200",
+      "highlights": "Kite surfing, white sands, and fresh seafood.",
+      "description_long": "Diani Beach is a premier coastal location in Kenya. It features white sands and lush forests. Digital nomads benefit from Safaricom 5G and Home Fiber infrastructure. The Ukunda Airstrip provides 45-minute flight access to Nairobi. Residents enjoy a tight-knit community with frequent social meetups.",
+      "legality_tips": "Be aware that coastal property leases often require a KRA PIN for any term longer than 6 months. Foreigners are advised to use escrow services for rental deposits in Diani to ensure refund compliance.",
+      "logistics": [
+        "Safaricom 5G is excellent along Beach Road.",
+        "M-Pesa activation available at Ukunda Center.",
+        "KRA PIN required for long-term leases over 6 months.",
+        "Carrefour Diani handles all western grocery needs."
+      ],
+      "coworking": ["Diani Digital Nomad Hub", "Surfside Offices", "Kite-Work Village"],
+      "neighborhoods": ["Galu Beach (Quiet)", "Beach Road (Active)", "Ukunda (Local Experience)"]
+    },
+    { 
+      "id": "kilimani", 
+      "name": "Kilimani", 
+      "region": "Nairobi",
+      "internet": "100Mbps Liquid Fiber", 
+      "vibe": "Urban Expat Hub",
+      "rent": "$800 - $1,500",
+      "highlights": "High-end malls, 5G coverage, and intense nightlife.",
+      "description_long": "Kilimani is the primary urban hub for Nairobi's expat population. The area offers international schools and multiple coworking spaces. High-speed Liquid Fiber connectivity is standard in most apartments. Professionals in tech and finance prefer Kilimani for its walkability and proximity to global-standard cafes.",
+      "legality_tips": "In Nairobi, always ensure your lease agreement explicitly mentions 'furnished' or 'unfurnished' status to avoid KRA VAT disputes. Foreigners should also verify the landlord's 'Log Book' for the property to ensure they are the legal owners.",
+      "logistics": [
+        "Walkable to Yaya Center and Adlife Plaza.",
+        "High concentration of global bank branches (NCBA, Absa).",
+        "Uber and Bolt are the primary transport modes.",
+        "Fiber-to-the-home is standard in most apartments."
+      ],
+      "coworking": ["The Garage (Nairobi)", "Nairobi Game Development Center", "Ikigai Nairobi"],
+      "neighborhoods": ["Argwings Kodhek (Central)", "Dennis Pritt Road (Quiet)", "Kileleshwa (Residential)"]
+    },
+    { 
+      "id": "lamu", 
+      "name": "Lamu Island", 
+      "region": "Coast",
+      "internet": "Starlink / 5G", 
+      "vibe": "Ancient Swahili Tradition",
+      "rent": "$400 - $900",
+      "highlights": "UNESCO World Heritage, no cars, total peace.",
+      "description_long": "Lamu Island is a UNESCO World Heritage site. It offers a car-free environment for deep creative focus. Transport relies on traditional dhows and donkeys. Starlink provides 150Mbps+ internet speeds. The island combines ancient Swahili architecture with modern remote work reliability.",
+      "legality_tips": "Lamu is a UNESCO site, and building or renovation laws are extremely strict. If you are an investor looking at real estate here, ensure you have a certified heritage architect review any plans before submitting to the County Government.",
+      "logistics": [
+        "Starlink is the only reliable choice for HD video calls.",
+        "Cash is king, although M-Pesa is widely accepted.",
+        "Boat taxis are the only way to move between islands.",
+        "Power cuts can happen; ensure your laptop has good battery."
+      ],
+      "coworking": ["Lamu Creative Lab", "Peponi Garden Work", "Shela Sunset Office"],
+      "neighborhoods": ["Lamu Old Town (Culture)", "Shela Village (Premium)", "Manda Island (Secluded)"]
+    },
+    { 
+      "id": "naivasha", 
+      "name": "Naivasha", 
+      "region": "Rift Valley",
+      "internet": "Reliable 4G/Fixed Wireless", 
+      "vibe": "Lakeside Retreat",
+      "rent": "$500 - $1,000",
+      "highlights": "Hiking, boat rides, and proximity to Nairobi.",
+      "description_long": "Naivasha is a lakeside retreat located 90 minutes from Nairobi. The area supports 'Nature-Working' through boat rides and cycling. Mild climates and volcanic landscapes define the region. Luxury resorts on South Lake Road provide stable high-speed Wi-Fi per the Kenya Immigration Act 2024 standards.",
+      "legality_tips": "Rift Valley land often falls under unique leasehold structures. Ensure your rental agreement specifies that the property has a valid 'CofO' (Certificate of Occupancy) to avoid land-transfer disputes which are common in agricultural zones.",
+      "logistics": [
+        "1.5 hour drive from Nairobi via the highway.",
+        "Ideal for weekend warriors or low-stress freelancers.",
+        "Stable power grid compared to coastal areas.",
+        "Freshwater lake access for leisure activities."
+      ],
+      "coworking": ["Naivasha Innovation Hub", "Lakeside Lounge", "Enashipai Tech Corner"],
+      "neighborhoods": ["South Lake (Premium)", "Naivasha Town (Commercial)", "Moi South Lake Rd (Resorts)"]
+    },
+    { 
+      "id": "watamu", 
+      "name": "Watamu", 
+      "region": "Coast",
+      "internet": "Fiber / Starlink", 
+      "vibe": "Boutique Tropical Sanctuary",
+      "rent": "$500 - $1,100",
+      "highlights": "Marine parks, Italian cuisine, and sea turtle conservation.",
+      "description_long": "Watamu is a boutique coastal sanctuary built around three spectacular bays. It offers an intimate community feel with a focus on wellness and marine conservation. Rapid modernization has brought fiber-to-the-villa and new coworking spaces, making it perfect for blending high-intensity work with world-class diving.",
+      "legality_tips": "Watamu has a high concentration of community-run conservation NGOs. If you plan to volunteer or work with these organizations while on a Class N permit, ensure your activities are strictly non-remunerative to remain compliant with Kenyan labor laws.",
+      "logistics": [
+        "Safaricom Home Fiber is now available in major resorts.",
+        "Fly from Nairobi to Malindi (20 mins away) for easy access.",
+        "M-Pesa widely preferred over credit cards.",
+        "Private solar backups are common in newer villas."
+      ],
+      "coworking": ["Watamu Creative Space", "PAPA Remo Office", "Turtle Bay Work Hub"],
+      "neighborhoods": ["Temple Point (Quiet)", "Watamu Village (Cultural)", "Turtle Bay Road (Active)"]
+    },
+    { 
+      "id": "nanyuki", 
+      "name": "Nanyuki", 
+      "region": "Mt. Kenya",
+      "internet": "100Mbps Safaricom Fiber", 
+      "vibe": "High-Altitude Luxury Safari",
+      "rent": "$700 - $1,400",
+      "highlights": "Mt. Kenya views, Ol Pejeta Conservancy, and cool mountain air.",
+      "description_long": "Nanyuki is a high-altitude luxury destination sitting right on the Equator. It offers a crisp mountain climate and a unique 'Safari-Office' experience with views of Mt. Kenya. The town features designer boutiques, world-class dining, and reliable 100Mbps fiber for remote production.",
+      "legality_tips": "Nanyuki is home to many large agricultural and conservancy ranches. If you are leasing property within a private ranch, ensure your lease includes a 'Ranch Access Agreement' which is a standard but vital legal protection for tenants in the Laikipia region.",
+      "logistics": [
+        "High concentration of expat-friendly cafes with 5G.",
+        "Excellent medical facilities (Nanyuki Cottage Hospital).",
+        "KRA PIN essential for long-term farm stay leases.",
+        "Frequent daily flights from Wilson Airport (40 mins)."
+      ],
+      "coworking": ["The Nanyuki Hub", "Cape Chestnut Garden", "Le Rustique Workations"],
+      "neighborhoods": ["Mukima (High-end)", "Nanyuki Town (Convenience)", "Daiga (Wilderness)"]
+    },
+    { 
+      "id": "kisumu", 
+      "name": "Kisumu", 
+      "region": "Lakeside",
+      "internet": "Fiber Optics (Liquid/Zuku)", 
+      "vibe": "Lakeside Commerce & Culture",
+      "rent": "$400 - $900",
+      "highlights": "Impala Sanctuary, sunset boat rides, and fresh tilapia.",
+      "description_long": "Kisumu, Kenya’s 'Lake City', is a major logistics hub with robust infrastructure and lower living costs. It features reliable fiber networks and an international airport. Digital nomads can enjoy sunset boat rides on Lake Victoria after work and a high quality of life on a modest budget.",
+      "legality_tips": "Kisumu is a rapidly growing business hub. If you are a Class G investor, the Kisumu County Investment and Social Development (KCISD) office provides a specialized 'One-Stop' desk for foreign businesses looking to set up regional operations.",
+      "logistics": [
+        "NCBA and Standard Chartered branches are easily accessible.",
+        "Kisumu International Airport is 15 mins from the CBD.",
+        "Uber and Tuk-Tuks are the most common transport.",
+        "Stable climate with year-round tropical heat."
+      ],
+      "coworking": ["LakeHub Kisumu", "Viga Innovation", "The West End Offices"],
+      "neighborhoods": ["Milimani (Expat Area)", "Riat Hills (Views)", "CBD (Business)"]
+    },
+    { 
+      "id": "eldoret", 
+      "name": "Eldoret", 
+      "region": "North Rift",
+      "internet": "4G+ / Fiber", 
+      "vibe": "City of Champions",
+      "rent": "$300 - $700",
+      "highlights": "Agricultural rich, athletics culture, and affordable living.",
+      "description_long": "Eldoret is a high-altitude city known as the 'City of Champions.' It offers the lowest cost of living for a major Kenyan city alongside stable 4G+ and expanding fiber. It is ideal for nomads seeking an authentic experience away from expat bubbles with an emphasis on health and focus.",
+      "legality_tips": "In Eldoret, many residential properties are located on converted agricultural land. Always ensure your rental check has verified that the land is registered under 'Residential Use' to ensure you can use your lease agreement for official KRA residency audits.",
+      "logistics": [
+        "Direct highway access to the Uganda border.",
+        "Very low cost of living compared to Nairobi.",
+        "Strong academic and tech community due to MOI University.",
+        "Fast growing Eldoret International Airport."
+      ],
+      "coworking": ["Eldoret Tech Hub", "The Champions Lounge", "Naiberi River Base"],
+      "neighborhoods": ["Elgon View (Premium)", "Kapsoya (Residential)", "Town Center (Busy)"]
+    }
+  ],
+  "topics": [
+    {
+      "id": "cost-of-living",
+      "keyword": "Cost of Living",
+      "title": "Digital Nomad Cost of Living in Kenya (2026)",
+      "desc": "A detailed breakdown of rent, food, transport, and leisure costs in $ USD.",
+      "entities": ["Budgeting", "KES vs USD", "Expat Housing", "Groceries"],
+      "faqs": [
+        { "q": "How much is a monthly gym membership?", "a": "Expect to pay $40 - $70 for premium gyms in Nairobi/Diani." },
+        { "q": "Are groceries expensive?", "a": "Imported goods (Cheese, Wine) are pricey. Local produce is extremely cheap." },
+        { "q": "What is the average electricity bill?", "a": "For a 1-bedroom, expect $30 - $60 depending on AC usage." }
+      ],
+      "proTips": "Always pay for rent in KES to avoid exchange rate markups from landlords."
+    },
+    {
+      "id": "internet-speed",
+      "keyword": "Internet & Uptime",
+      "title": "Reliable Internet for Nomads in Kenya: Fiber & Starlink Guide",
+      "desc": "Maximum uptime locations, co-working coverage, and mobile data speeds.",
+      "entities": ["Liquid Intelligent Technologies", "Starlink Kenya", "Safaricom 5G", "Supa" ],
+      "faqs": [
+        { "q": "Does Starlink work in Lamu?", "a": "Yes, it is currently the best option for remote workers on the island." },
+        { "q": "How fast is Safaricom 5G?", "a": "In Nairobi and Diani, you can see speeds up to 300Mbps." },
+        { "q": "Is data capped in Kenya?", "a": "Most Home Fiber is unlimited. Mobile data is usually sold in daily/monthly bundles." }
+      ],
+      "proTips": "Always have a Safaricom 4G/5G backup router even if you have Fiber optics."
+    },
+    {
+      "id": "permit-requirements",
+      "keyword": "Visa Requirements",
+      "title": "Kenya Digital Nomad Visa (Class N): 2026 Requirements Guide",
+      "desc": "Step-by-step documentation audit for remote workers requiring $24,000 USD annually.",
+      "entities": ["Class N Permit", "Dossier Audit", "Tax Residency", "Minimum Income"],
+      "faqs": [
+        { "q": "Can I work for a Kenyan company on Class N?", "a": "No, Class N is strictly for work from foreign sources only." },
+        { "q": "Do I need a local bank account?", "a": "It's not required for the permit, but highly recommended for logistics." },
+        { "q": "How long does approval take?", "a": "Official timelines are 2-4 months, depending on dossier completeness." }
+      ],
+      "proTips": "Ensure your bank statements are certified by the bank to avoid rejection."
+    },
+    {
+      "id": "safety-for-expats",
+      "keyword": "Safety & Logistics",
+      "title": "Is Kenya Safe for Digital Nomads? Logistics & Practical Tips",
+      "desc": "Urban safety, healthcare standards, and night-time navigation for expats.",
+      "entities": ["Medical Insurance", "Emergency Contacts", "Neighborhood Safety", "Expat Communities"],
+      "faqs": [
+        { "q": "Can I walk at night in Nairobi?", "a": "Stick to well-lit areas in Kilimani/Westlands or use Uber/Bolt." },
+        { "q": "Is healthcare good?", "a": "Nairobi has world-class private hospitals (Aga Khan, Nairobi Hospital)." },
+        { "q": "Do I need special vaccinations?", "a": "Yellow Fever is required for entry. Malaria meds are recommended for the coast." }
+      ],
+      "proTips": "Join the local Nairobi Expat Slack to get real-time safety updates."
+    }
+  ]
+}
